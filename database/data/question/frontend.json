@@ -1,0 +1,5618 @@
+[
+    {
+        "id": "1632",
+        "question": "O'zingiz haqingizda gapirib bering",
+        "chance": "96",
+        "tag": "HR"
+    },
+    {
+        "id": "1633",
+        "question": "Event loop haqida gapirib bering",
+        "chance": "66",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1634",
+        "question": "Nima uchun frontend va javascript yo'nalishini tanladingiz?",
+        "chance": "60",
+        "tag": "HR"
+    },
+    {
+        "id": "1478",
+        "question": "Closure nima?",
+        "chance": "46",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1635",
+        "question": "Promise nima va uning qanday statelari bor?",
+        "chance": "46",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1636",
+        "question": "JSda kod yozgan loyihalaringiz haqida gapirib bering",
+        "chance": "36",
+        "tag": "HR"
+    },
+    {
+        "id": "1638",
+        "question": "Siz bajargan eng qiziqarli vazifa qaysi edi?",
+        "chance": "26",
+        "tag": "HR"
+    },
+    {
+        "id": "1621",
+        "question": "Virtual DOM nima?",
+        "chance": "26",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1637",
+        "question": "JavaScriptda qanday ma'lumot turlari mavjud?",
+        "chance": "26",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1639",
+        "question": "let vardan nima bilan farq qiladi?",
+        "chance": "26",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1640",
+        "question": "Frontend bo'yicha qanday tajribangiz bor?",
+        "chance": "23",
+        "tag": "HR"
+    },
+    {
+        "id": "1642",
+        "question": "Yaqin kelajak uchun rejalaringiz qanday?",
+        "chance": "23",
+        "tag": "HR"
+    },
+    {
+        "id": "1641",
+        "question": "var constdan nima bilan farq qiladi?",
+        "chance": "23",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1481",
+        "question": "call, apply, bind metodlarining farqi",
+        "chance": "20",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1646",
+        "question": "== va === o'rtasidagi farq nima?",
+        "chance": "20",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1643",
+        "question": "Function expression va function declaration o'rtasidagi farq haqida nimalarni bilasiz?",
+        "chance": "20",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1647",
+        "question": "Makro va mikro tasklar nima?",
+        "chance": "20",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1645",
+        "question": "Oldingi loyihada qanday majburiyatlaringiz bo'lgan?",
+        "chance": "20",
+        "tag": "HR"
+    },
+    {
+        "id": "1654",
+        "question": "O'zgaruvchilarni e'lon qilishning qanday usullari bor, farqlarini ayting",
+        "chance": "16",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1660",
+        "question": "forEach va map o'rtasidagi farq nimada?",
+        "chance": "16",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1649",
+        "question": "null va undefined o'rtasidagi farq nimada?",
+        "chance": "16",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1661",
+        "question": "Generic nima?",
+        "chance": "16",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "1662",
+        "question": "JSda event loop nima uchun kerak?",
+        "chance": "16",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1650",
+        "question": "Semantic versioning haqida gapirib bera olasizmi?",
+        "chance": "16",
+        "tag": "Tools"
+    },
+    {
+        "id": "1651",
+        "question": "this nima?",
+        "chance": "16",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1659",
+        "question": "Ma'lumotlarni localStorageda saqlashning cookie'larda saqlashdan farqi nimada?",
+        "chance": "16",
+        "tag": "WEB"
+    },
+    {
+        "id": "1653",
+        "question": "Qaysi texnologiyalardan foydalanasiz?",
+        "chance": "16",
+        "tag": "HR"
+    },
+    {
+        "id": "1656",
+        "question": "Qanday hooklar bo'ladi?",
+        "chance": "16",
+        "tag": "React"
+    },
+    {
+        "id": "1667",
+        "question": "Qaysi hooklar bilan ishlashga to'g'ri kelgan?",
+        "chance": "13",
+        "tag": "React"
+    },
+    {
+        "id": "1678",
+        "question": "position xususiyatining qanday qiymatlari bo'ladi?",
+        "chance": "13",
+        "tag": "CSS"
+    },
+    {
+        "id": "1689",
+        "question": "Massivlarning qanday metodlarini bilasiz?",
+        "chance": "13",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1677",
+        "question": "State manager nima va qaysilari bilan ishlashga to'g'ri kelgan?",
+        "chance": "13",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1674",
+        "question": "useEffect qanday ishlatiladi?",
+        "chance": "13",
+        "tag": "React"
+    },
+    {
+        "id": "1676",
+        "question": "HTML semantikasi nima?",
+        "chance": "13",
+        "tag": "HTML"
+    },
+    {
+        "id": "1552",
+        "question": "BEM metodologiyasi nima?",
+        "chance": "13",
+        "tag": "CSS"
+    },
+    {
+        "id": "1669",
+        "question": "React bo'yicha o'z tajribangiz haqida gapirib bering",
+        "chance": "13",
+        "tag": "React"
+    },
+    {
+        "id": "1673",
+        "question": "Ushbu loyiha ustida ishlash paytida duch kelgan eng murakkab vazifa haqida gapirib bering",
+        "chance": "13",
+        "tag": "HR"
+    },
+    {
+        "id": "1680",
+        "question": "Qaysi stekdan foydalangansiz?",
+        "chance": "13",
+        "tag": "HR"
+    },
+    {
+        "id": "1687",
+        "question": "let va const o'rtasidagi farq nimada?",
+        "chance": "13",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1696",
+        "question": "Prototip nima?",
+        "chance": "13",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1682",
+        "question": "Jamoada ishlash tajribangiz haqida gapirib bering",
+        "chance": "13",
+        "tag": "HR"
+    },
+    {
+        "id": "1692",
+        "question": "Necha yillik tajribangiz bor?",
+        "chance": "13",
+        "tag": "HR"
+    },
+    {
+        "id": "1623",
+        "question": "REST API nima?",
+        "chance": "13",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1622",
+        "question": "DOM tree nima?",
+        "chance": "13",
+        "tag": "HTML"
+    },
+    {
+        "id": "1694",
+        "question": "O'zingizning pet-projectlaringiz haqida gapirib bering",
+        "chance": "13",
+        "tag": "HR"
+    },
+    {
+        "id": "1684",
+        "question": "Ikki tomonlama bog'lanish (two-way binding) nima?",
+        "chance": "13",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1670",
+        "question": "HTTP so'rovi qanday qilinadi?",
+        "chance": "13",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1750",
+        "question": "Git-flow nima?",
+        "chance": "10",
+        "tag": "Git"
+    },
+    {
+        "id": "1747",
+        "question": "Nimani ishlatish afzalroq: TypeScript yoki JavaScript?",
+        "chance": "10",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "1751",
+        "question": "Map va Set haqida gapirib bering",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1742",
+        "question": "Ma'lumotlarni localStorageda saqlashning sessionStorageda saqlashdan farqi nimada?",
+        "chance": "10",
+        "tag": "WEB"
+    },
+    {
+        "id": "1739",
+        "question": "Hook nima?",
+        "chance": "10",
+        "tag": "React"
+    },
+    {
+        "id": "1745",
+        "question": "Makro va mikro tasklar o'rtasidagi farq nimada?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1746",
+        "question": "Pseudo element nima?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1748",
+        "question": "Ishda qanday vazifalarni hal qilgansiz?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1749",
+        "question": "IIFE (Immediately Invoked Function Expression) nima?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1743",
+        "question": "CSS (Cascading Style Sheets) nima?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1734",
+        "question": "Props (React/Vue) nima?",
+        "chance": "10",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1732",
+        "question": "JSX nima?",
+        "chance": "10",
+        "tag": "React"
+    },
+    {
+        "id": "1737",
+        "question": "React nima?",
+        "chance": "10",
+        "tag": "React"
+    },
+    {
+        "id": "1744",
+        "question": "Qanday selektorlarni bilasiz?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1752",
+        "question": "CSS'dagi cascade so'zi nimani anglatadi?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1725",
+        "question": "Ternar operator nima?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1726",
+        "question": "Destrukturizatsiya nima?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1722",
+        "question": "Pseudo klasslar nima?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1721",
+        "question": "margin va padding o'rtasidagi farq",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1723",
+        "question": "display xususiyati - asosiy qiymatlari va u qanday ishlaydi?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1728",
+        "question": "event.preventDefault() va event.stopPropagation() nima uchun kerak?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1717",
+        "question": "Hozir qayerda ishlayapsiz?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1719",
+        "question": "Blokni gorizontal va vertikal bo'yicha markazga qanday joylashtirish mumkin?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1714",
+        "question": "Kod revyu qanday tashkil qilingan edi?",
+        "chance": "10",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "1711",
+        "question": "setTimeout qanday ishlaydi?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1715",
+        "question": "Jamoa bilan qanday muloqot qilasiz?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1720",
+        "question": "Inline stillar nima va ular qanday prioritetga ega?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1731",
+        "question": "Prototipik merosxo'rlik nima?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1753",
+        "question": "CSS'da merosxo'rlik qanday ishlaydi?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1703",
+        "question": "Closure nima uchun kerak?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1704",
+        "question": "async/await haqida gapirib bering",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1707",
+        "question": "Vuex nima uchun ishlatiladi?",
+        "chance": "10",
+        "tag": "Vue"
+    },
+    {
+        "id": "1553",
+        "question": "Elementni yashirishning qanday usullari bor?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1624",
+        "question": "HTTP nima?",
+        "chance": "10",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1625",
+        "question": "CORS (Cross-Origin Resource Sharing) nima?",
+        "chance": "10",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1708",
+        "question": "Boshqa freymvorklar bilan qanday tajribangiz bo'lgan?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1754",
+        "question": "HTMLda qaysi asosiy ishlatiladigan teglarni bilasiz?",
+        "chance": "10",
+        "tag": "HTML"
+    },
+    {
+        "id": "1701",
+        "question": "Nima uchun IT sohasiga kelgansiz?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1709",
+        "question": "React qanday muammolarni hal qiladi?",
+        "chance": "10",
+        "tag": "React"
+    },
+    {
+        "id": "1710",
+        "question": "Qilgan eng qiziqarli loyihangiz qaysi?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1712",
+        "question": "Testlar bilan ishlash haqida gapirib bering",
+        "chance": "10",
+        "tag": "Testing"
+    },
+    {
+        "id": "1713",
+        "question": "Qaysi preprotsessorlar bilan ishlagansiz?",
+        "chance": "10",
+        "tag": "CSS"
+    },
+    {
+        "id": "1716",
+        "question": "Dasturlash darajangizni qanday baholaysiz?",
+        "chance": "10",
+        "tag": "HR"
+    },
+    {
+        "id": "1755",
+        "question": "Pure function nima?",
+        "chance": "10",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1867",
+        "question": "Nima uchun rasmlar uchun kenglik va balandlikni ko'rsatish muhim?",
+        "chance": "6",
+        "tag": "HTML"
+    },
+    {
+        "id": "1868",
+        "question": "Hozirgi ishingizda qanday vazifalarni hal qilayotganingiz va nimalarga duch kelayotganingiz haqida gapirib bering",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1860",
+        "question": "Promise.all() nima uchun kerak?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1857",
+        "question": "Ishtirok etgan eng murakkab loyihangiz qaysi?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1861",
+        "question": "Hozir qanday rivojlanyapsiz?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1869",
+        "question": "var, let, const o'zgaruvchilari qachon ishlatiladi?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1851",
+        "question": "event.preventDefault() va event.stopPropagation() o'rtasidagi farq nimada?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1850",
+        "question": "JSda obyektlarni qanday solishtirish mumkin?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1852",
+        "question": "Qayta chizishlarni (rerenders) qanday optimallashtirish mumkin?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1855",
+        "question": "Map oddiy obyekt (object literal)dan nima bilan farq qiladi?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1856",
+        "question": "TypeScript nima?",
+        "chance": "6",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "1858",
+        "question": "Map, Set nima uchun kerak?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1859",
+        "question": "useLayoutEffect va useEffect o'rtasidagi farq nima?",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1862",
+        "question": "CSSdagi specificity so'zi nimani anglatadi?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1863",
+        "question": "Tiplarni o'zgartirish (type coercion/conversion) haqida gapirib bering",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1865",
+        "question": "JSda qanday funksiyalar turlari bor?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1847",
+        "question": "Qayerda o'qigansiz?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1849",
+        "question": "SessionStorage va cookie o'rtasidagi farq nimada?",
+        "chance": "6",
+        "tag": "WEB"
+    },
+    {
+        "id": "1844",
+        "question": "Kim bo'lib ishlagansiz?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1843",
+        "question": "Utility tiplar (TypeScript utility types) haqida gapirib bering",
+        "chance": "6",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "1845",
+        "question": "call, apply va bind nima?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1841",
+        "question": "IIFE funksiyasi nima uchun kerak?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1840",
+        "question": "SSR (Server-Side Rendering) nima?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1842",
+        "question": "Ishda Map va Set'dan nima maqsadda foydalangansiz?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1846",
+        "question": "TypeScriptning qanday afzalliklari bor?",
+        "chance": "6",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "1854",
+        "question": "Promise.all() qanday ishlaydi?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1870",
+        "question": "JS'da funksiya nima?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1835",
+        "question": "Cookie'larning asosiy xususiyatlari qanday?",
+        "chance": "6",
+        "tag": "WEB"
+    },
+    {
+        "id": "1834",
+        "question": "Field massiv ekanligini qanday tekshirish mumkin?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1836",
+        "question": "useContext nima?",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1833",
+        "question": "Vue komponentasining hayot sikli haqida gapirib bering",
+        "chance": "6",
+        "tag": "Vue"
+    },
+    {
+        "id": "1832",
+        "question": "Vue.js'da reaktivlik qanday ishlaydi?",
+        "chance": "6",
+        "tag": "Vue"
+    },
+    {
+        "id": "1794",
+        "question": "SOLID nima?",
+        "chance": "6",
+        "tag": "OOP"
+    },
+    {
+        "id": "1837",
+        "question": "Margin collapsing nima?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1828",
+        "question": "Virtual DOM nima uchun kerak?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1830",
+        "question": "Redux nima?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1826",
+        "question": "map, reduce va filter qanday ishlaydi?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1825",
+        "question": "O'z-o'zini chaqiruvchi funksiya (IIFE) nima?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1831",
+        "question": "Redux nima uchun kerak?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1838",
+        "question": "BEM metodologiyasining afzalligi nimada?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1821",
+        "question": "Dasturlash tajribangiz qanday?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1820",
+        "question": "v-show va v-if direktivalarining farqlarini ayting",
+        "chance": "6",
+        "tag": "Vue"
+    },
+    {
+        "id": "1822",
+        "question": "Qaysi freymvork bilan ishlash ko'proq yoqdi?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1817",
+        "question": "String interpolation nima?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1819",
+        "question": "Event listenerni qanday qo'shish mumkin?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1823",
+        "question": "JS'da qanday data strukturalari bor?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1814",
+        "question": "Mixins nima?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1813",
+        "question": "Asinxron kod bilan ishlashning qanday usullarini bilasiz?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1815",
+        "question": "Ma'lumotlarni ota komponentdan bola komponentga qanday uzatish mumkin?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1811",
+        "question": "Elementga sichqoncha olib borganda, qo'shni elementlarni siljitmasdan uni qanday kattalashtirish mumkin?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1810",
+        "question": "Elementlarni yangi qatorga o'tkazish uchun javob beradigan Flexbox xususiyati",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1812",
+        "question": "Spread operatori (...) nima uchun kerak?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1816",
+        "question": "$emit (Vue) nima qiladi?",
+        "chance": "6",
+        "tag": "Vue"
+    },
+    {
+        "id": "1824",
+        "question": "apply() metodi nima qiladi?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1839",
+        "question": "Event bubbling nima?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1871",
+        "question": "DOM nima uchun zarur?",
+        "chance": "6",
+        "tag": "HTML"
+    },
+    {
+        "id": "1800",
+        "question": "Adaptiv verstka nima?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1799",
+        "question": "box-sizing: border-box nima qiladi?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1801",
+        "question": "O'lchamlarni ko'rsatishda vh, vw nima uchun xizmat qiladi?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1796",
+        "question": "Brauzer qanday ishlaydi?",
+        "chance": "6",
+        "tag": "WEB"
+    },
+    {
+        "id": "1798",
+        "question": "Selektor nima?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1803",
+        "question": "Element o'lchami nimadan tashkil topadi?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1785",
+        "question": "Sayt yuklanishini qanday tezlashtirish mumkin?",
+        "chance": "6",
+        "tag": "WEB"
+    },
+    {
+        "id": "1787",
+        "question": "Nima uchun React jQuery'dan yaxshiroq?",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1778",
+        "question": "new operatori qanday ishlaydi?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1777",
+        "question": "Mutaxassis sifatida qaysi yo'nalishda rivojlanishni xohlar edingiz?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1779",
+        "question": "Kod revyuga qanday qaraysiz?",
+        "chance": "6",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "1789",
+        "question": "Jamoada nechta odam bor?",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1804",
+        "question": "z-index nima uchun javob beradi?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1773",
+        "question": "Promise'lar nima uchun paydo bo'lgan?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1772",
+        "question": "Mikro tasklarga misol keltiring",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1774",
+        "question": "Self-learning haqida gapirib bering",
+        "chance": "6",
+        "tag": "HR"
+    },
+    {
+        "id": "1770",
+        "question": "React'dagi komponentlar haqida gapirib bering",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1769",
+        "question": "useState nima uchun ishlatiladi?",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1771",
+        "question": "Lifecycle metodlarini sanab bering",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1775",
+        "question": "Turli xeshteglar nima uchun kerak?",
+        "chance": "6",
+        "tag": "Yo'q"
+    },
+    {
+        "id": "1767",
+        "question": "JavaScript'dagi primitiv ma'lumot turlari haqida nimalarni bilasiz?",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1768",
+        "question": "Closure haqida gapirib bering",
+        "chance": "6",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1776",
+        "question": "React qanday ishlaydi?",
+        "chance": "6",
+        "tag": "React"
+    },
+    {
+        "id": "1627",
+        "question": "OOP nima?",
+        "chance": "6",
+        "tag": "OOP"
+    },
+    {
+        "id": "1626",
+        "question": "Qaysi HTTP so'rov metodlarini bilasiz?",
+        "chance": "6",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1809",
+        "question": "Qaysi psevdoelementlarni bilasiz va ishlatasiz?",
+        "chance": "6",
+        "tag": "CSS"
+    },
+    {
+        "id": "1876",
+        "question": "Komponentlar o'rtasida aloqa qilishning qanday usullari bor?",
+        "chance": "6",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1606",
+        "question": "Big O notatsiyasi nima?",
+        "chance": "3",
+        "tag": "Algoritmlar, strukturalar"
+    },
+    {
+        "id": "1605",
+        "question": "SOAP protokoli nima?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1542",
+        "question": "<noscript> tegi nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1604",
+        "question": "HTTPS nima?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1603",
+        "question": "Session ma'lumotlari aynan qayerda saqlanadi va server aniq session ma'lumotlarini aniq HTTP so'roviga qanday bog'laydi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1510",
+        "question": "HTTPOnly cookie'lar nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1602",
+        "question": "HTTP/1 va HTTP/2 o'rtasidagi farqlar nimada?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1601",
+        "question": "HTTP so'rovi bo'yicha 5 ta xatoliklar klassini ayting",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1540",
+        "question": "Quyidagi elementlar qaysi maqsadlarda qo'shilganligini tushuntiring: Article, aside, audio, canvas, figcaption, figure, footer, header, hgroup, output, section, video",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1600",
+        "question": "Agar konsol orqali, masalan curl bilan saytga so'rov yuborsak, nimani ko'ramiz?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1599",
+        "question": "GraphQL nima?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "1539",
+        "question": "Siz bilgan inline elementlarni sanab bering (kamida 5 ta)",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1509",
+        "question": "HTML5'ning HTML4.01 va XHTML1.0'dan farqlari nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1494",
+        "question": "JavaScript'da merosxo'rlik qanday ishlashini tushuntiring",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1598",
+        "question": "Hyperlink nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1597",
+        "question": "Service Workers HTML5 spetsifikatsiyasining bir qismimi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1538",
+        "question": "Siz bilgan blokli elementlarni sanab bering (kamida 5 ta)",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1596",
+        "question": "Web Workers HTML5 spetsifikatsiyasining bir qismimi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1537",
+        "question": "WebGL nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1508",
+        "question": "Agar HTML5 ni ochiq veb-platforma sifatida qarasak, u nimaga asoslanadi, qanday komponentlardan iborat?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1594",
+        "question": "Drag and drop spetsifikatsiyaning bir qismimi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1593",
+        "question": "WebSQL HTML5 spetsifikatsiyasining bir qismimi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1536",
+        "question": "Qaysi hollarda canvas'ni, qaysi hollarda esa svg'ni tanlash yaxshiroq?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1592",
+        "question": "WebSQL nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1535",
+        "question": "Canvas va SVG o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1507",
+        "question": "Kontent turli tillarda bo'lishi mumkin bo'lgan sahifani qanday rasmiylashtirish kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1493",
+        "question": "Function.prototype.bind funksiyasi nima qiladi va nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1486",
+        "question": "Web worker obyektini qanday yo'q qilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1590",
+        "question": "FOUC (Flash of Unstyled Content) nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1589",
+        "question": "Tashqi resurslarni bir nechta domenlardan yuklashning afzalligi nimada?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1534",
+        "question": "HTML5'dagi canvas nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1588",
+        "question": "Sahifadagi tashqi resurslar yuklanishini qanday optimallashtirish mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1587",
+        "question": "Cookie'lar yoqilganligini qanday tekshirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1533",
+        "question": "SVG (Scalable Vector Graphics) nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1506",
+        "question": "SGML, HTML, XML va XHTML o'rtasida qanday bog'liqlik bor?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1586",
+        "question": "Feature detection (brauzer imkoniyatlarini aniqlash) nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1585",
+        "question": "Progressiv JPEG nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1532",
+        "question": "<dfn> tegini bilasizmi va u nima uchun javob beradi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1584",
+        "question": "Progressive enhancement va graceful degradation o'rtasidagi farqni tushuntirib bera olasizmi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1583",
+        "question": "Progressive enhancement va graceful degradation o'rtasidagi farqni tushuntirib bera olasizmi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1531",
+        "question": "HTML5'da qaysi elementlar aria atributiga ega bo'lishi mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1505",
+        "question": "Sahifalarni application/xhtml+xml tipi bilan uzatishda muammolar paydo bo'lishi mumkinmi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1492",
+        "question": "Host obyektlari va native obyektlar o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1582",
+        "question": "PerfectPixel yoki shunga o'xshash vositalardan foydalanasizmi?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "1581",
+        "question": "Brauzer qaysi elementlarga CSS stillarini qo'llashni qanday aniqlashini tushuntiring",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1530",
+        "question": "Hozir HTML5 qaysi video fayl formatlarini qo'llab-quvvatlaydi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1579",
+        "question": "Sahifalarni chop etish uchun qanday optimallashtirish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1529",
+        "question": "Audio faylni ijro etishni qaysi metod boshlaydi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1504",
+        "question": "HTML va XHTML o'rtasidagi farq nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1578",
+        "question": "CSS Grid va Flexbox'ni birgalikda ishlatish mumkinmi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1577",
+        "question": "CSS Grid nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1528",
+        "question": "autocomplete atributi nima uchun kerak, qanday parametrlarni qabul qiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1527",
+        "question": "valueAsNumber xususiyati nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1485",
+        "question": "JavaScript'da web worker potogini qanday yaratish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1482",
+        "question": "Hashtable nima?",
+        "chance": "3",
+        "tag": "Algoritmlar, strukturalar"
+    },
+    {
+        "id": "1574",
+        "question": "Qaysi flexbox qoidasi flex elementlarini bitta yoki bir nechta qatorda chiqarishni belgilaydi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1573",
+        "question": "Qaysi flexbox xususiyati flex elementlarining yo'nalishi uchun javob beradi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1526",
+        "question": "HTML5'dagi output elementi nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1572",
+        "question": "Flexbox'da qanday o'qlar bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1571",
+        "question": "Flexbox'ni qanday belgilash mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1525",
+        "question": "HTML5'dagi datalist elementi nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1502",
+        "question": "Quirks mode nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1570",
+        "question": "Flexbox nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1524",
+        "question": "HTML5'da qanday yangi forma elementlari kiritilgan?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1568",
+        "question": "Sahifalarning eski/cheklangan brauzerlarda ko'rsatilishini qanday ta'minlaysiz?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "1523",
+        "question": "Relative link nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1501",
+        "question": "Viewport nima uchun zarur?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1490",
+        "question": "JavaScript module patternni tushuntiring va u qayerda qo'llaniladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1522",
+        "question": "Absolute link nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1521",
+        "question": "target atributi nima, qanday qiymatlarni qabul qiladi va nima qiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1500",
+        "question": "data-* atributlari nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1562",
+        "question": "reset.css normalize.css'dan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1896",
+        "question": "Angular'da qanday binding turlari bor?",
+        "chance": "3",
+        "tag": "Angular"
+    },
+    {
+        "id": "1894",
+        "question": "Sinxron funksiya qanday tip qaytaradi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1892",
+        "question": "Promise.race() nima ekanligi haqida gapirib bering",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1890",
+        "question": "Function expression nima va u nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1888",
+        "question": "Function expression va function declaration bilan ishlashning o'ziga xosliklari",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1886",
+        "question": "Nima uchun aynan Angular?",
+        "chance": "3",
+        "tag": "Angular"
+    },
+    {
+        "id": "1561",
+        "question": "normalize css nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1520",
+        "question": "Qaysi teglar ```<head>``` ichida deyarli majburiy bo'lishi kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1560",
+        "question": "normalize css nima uchun kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1559",
+        "question": "reset css nima uchun kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1519",
+        "question": "Meta-teg yordamida HTTP-sarlavhani qanday ko'rsatish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1499",
+        "question": "DOCTYPE nima va u nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1489",
+        "question": "Undeclared o'zgaruvchilar nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1484",
+        "question": "Web worker potogiga qanday cheklovlar qo'yiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1558",
+        "question": "reset css nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1557",
+        "question": "flex-grow va flex-shrink xususiyatlari qanday ishlaydi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1518",
+        "question": "Meta teglar nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1556",
+        "question": "Box model nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1631",
+        "question": "Flash of unstyled content (FOUC) xatosidan qanday qochish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1555",
+        "question": "Flex(box) nima uchun kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1517",
+        "question": "Progressiv rendering nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1498",
+        "question": "article va section o'rtasidagi farq nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1630",
+        "question": "Inkapsulyatsiyaning ma'nosi nimada?",
+        "chance": "3",
+        "tag": "OOP"
+    },
+    {
+        "id": "1629",
+        "question": "Semantik verstka kim uchun zarur?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1554",
+        "question": "Qanday (CSS?) metodologiyalarni bilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1628",
+        "question": "Sahifani optimallashtirish bo'yicha qanday yechimlarni bilasiz?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1516",
+        "question": "Kesh manifest faylidagi quyidagi bo'limlarga tavsif bering: Cache, network va fallback.",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1551",
+        "question": "<basefont> tegi mavjudmi va u nima uchun javob beradi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1515",
+        "question": "HTML5'dagi application cache nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1497",
+        "question": "Cookie'lar qanday ishlaydi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1488",
+        "question": "Undefined o'zgaruvchilar nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1550",
+        "question": "<keygen> tegi haqida gapirib bering",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1620",
+        "question": "Funksional dasturlash nima?",
+        "chance": "3",
+        "tag": "Umumiy"
+    },
+    {
+        "id": "1619",
+        "question": "Behavioral patternlarini ayting",
+        "chance": "3",
+        "tag": "Паттерны"
+    },
+    {
+        "id": "1549",
+        "question": "Anchor link nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1514",
+        "question": "HTML5'da self-closing teglarni /> bilan yopish kerakmi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1618",
+        "question": "Structural patternlarni ayting",
+        "chance": "3",
+        "tag": "Паттерны"
+    },
+    {
+        "id": "1617",
+        "question": "Creational patternlarni ayting",
+        "chance": "3",
+        "tag": "Паттерны"
+    },
+    {
+        "id": "1887",
+        "question": "JavaScript'da qanday primitiv ma'lumotlarni bilasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1548",
+        "question": "<q> tegi nima uchun mavjud?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1889",
+        "question": "call, apply, bind metodlari nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1616",
+        "question": "Dizayn patternlarining qanday klassifikatsiyalarini bilasiz?",
+        "chance": "3",
+        "tag": "Паттерны"
+    },
+    {
+        "id": "1891",
+        "question": "async/await sintaktik shakarining promise'ga nisbatan afzalligi nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1615",
+        "question": "Shadow DOM, Virtual DOM va Regular DOM bir-biridan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1893",
+        "question": "Asinxron funksiyalarni bajarish natijasi nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1547",
+        "question": "Forma elementi fokusni yo'qotganda qaysi event ishga tushadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1895",
+        "question": "Angular qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Angular"
+    },
+    {
+        "id": "1513",
+        "question": "JS obyektini localStorage'ga qanday joylashtirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1897",
+        "question": "Angular'dagi bindinglar o'rtasidagi farqlar",
+        "chance": "3",
+        "tag": "Angular"
+    },
+    {
+        "id": "1496",
+        "question": "<script>, <script async>, <script defer> o'rtasidagi farq nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1899",
+        "question": "Pipe (Angular pipe) qanday xususiyatga ega?",
+        "chance": "3",
+        "tag": "Angular"
+    },
+    {
+        "id": "1614",
+        "question": "Shadow DOM nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1901",
+        "question": "Observable nima?",
+        "chance": "3",
+        "tag": "RxJS"
+    },
+    {
+        "id": "1613",
+        "question": "DCI (Data, Context, and Interaction) nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "1903",
+        "question": "Observable va Promise'ning o'xshashliklari va farqlari",
+        "chance": "3",
+        "tag": "RxJS"
+    },
+    {
+        "id": "1546",
+        "question": "HTML5'da qaysi teglar taqiqlangan?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1905",
+        "question": "Potoklar (streams/observables) bilan ishlash operatorlaridan qaysilarini bilasiz?",
+        "chance": "3",
+        "tag": "RxJS"
+    },
+    {
+        "id": "1612",
+        "question": "MVVM arxitektura patterni nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "1907",
+        "question": "Funksiyani nima sifatida ishlatish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1611",
+        "question": "MVP arxitektura patterni nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "1909",
+        "question": "null va undefined haqida batafsilroq gapirib bering",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1545",
+        "question": "<i> va <em>, <strong> va <b> va hk.larning farqi",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1911",
+        "question": "To'xtatilgan promise'ni qayta ishga tushirish mumkinmi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1512",
+        "question": "Cookies, sessionStorage va localStorage o'rtasidagi farqni tushuntiring",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1913",
+        "question": "Nima uchun Vue?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "1610",
+        "question": "MVC arxitektura patterni nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "1915",
+        "question": "Vue'ni nima bilan birga ishlatasiz?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "1609",
+        "question": "HMAC (Hash-based Message Authentication Code) nima?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "1917",
+        "question": "Agar middle dasturchini suhbatdan o'tkazayotgan bo'lsangiz, qanday savol bergan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1544",
+        "question": "Qaysi kategoriyalar kontentning asosiy kategoriyalari hisoblanadi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1919",
+        "question": "resolve'ning ikkinchi argumenti nima qiladi?",
+        "chance": "3",
+        "tag": "Yo'q"
+    },
+    {
+        "id": "1921",
+        "question": "Agar promise bo'lmagan narsaga await ishlatsa nima bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1607",
+        "question": "Server va klient o'rtasidagi kommunikatsiyaning bir nechta usullarini tasvirlab bering",
+        "chance": "3",
+        "tag": "Networking"
+    },
+    {
+        "id": "1543",
+        "question": "HTML5'dagi kontent kategoriyalari nima, ular nechta, ular haqida gapirib bering.",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1511",
+        "question": "Secure cookie'lar nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1927",
+        "question": "Nima uchun frontend dasturchi algoritmlarni bilishi va algoritmlar murakkabligini baholashni tushunishi kerak?",
+        "chance": "3",
+        "tag": "Algoritmlar, strukturalar"
+    },
+    {
+        "id": "1495",
+        "question": "id va class ning qanday farqlari bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1929",
+        "question": "8 ta elementdan keraklisini topish uchun nechta taqqoslash kerak bo'ladi?",
+        "chance": "3",
+        "tag": "Algoritmlar, strukturalar"
+    },
+    {
+        "id": "1487",
+        "question": "Nima uchun HTML5'ga server-sent events (SSE) kiritilgan?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1483",
+        "question": "Web Workers nima va ular nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1933",
+        "question": "O'z loyihalaringizda Vue komponentlarida CSS izolyatsiyasini qanday tashkil qilgansiz?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "1935",
+        "question": "Vue'da reaktivlikni yo'qotish kabi tushunchaga duch kelganmisiz?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "1937",
+        "question": "Qanday CSS layoutlarini bilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1941",
+        "question": "position xususiyati qaysi qiymatlarda z-index bilan ishlaydi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1943",
+        "question": "jQuery va React bitta sahifada birga ishlay oladimi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1945",
+        "question": "Ilovada ko'p ma'lumotlarni qayta ishlash kerakmi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1947",
+        "question": "Hook'larni yozish uchun qanday qoidalar bor?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "1951",
+        "question": "Nima uchun create-react-app kutubxonasini tanladingiz?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "1956",
+        "question": "Dasturlashda nima yoqmaydi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1960",
+        "question": "Front-end va back-end qanday o'zaro aloqada bo'ladi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1962",
+        "question": "Repozitoriy nima?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "1964",
+        "question": "HTML qanday qilib sahifaga aylanadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "1966",
+        "question": "Nima uchun React?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "1968",
+        "question": "Webpack nima qiladi?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "1970",
+        "question": "Server rendering (SSR) va SPA (Single Page Application) o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1972",
+        "question": "Agar funksiya ssilka bo'yicha uzatilsa nima bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1974",
+        "question": "CSS qayerdan paydo bo'lgan?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1976",
+        "question": "Qaysi vositalar bilan ishlagansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1978",
+        "question": "Redux nima bilan yoqadi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1980",
+        "question": "Redux'ning qanday afzalliklari bor?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1982",
+        "question": "Redux store'dagi ma'lumotlarni o'zgartirish uchun nima qilish kerak?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1984",
+        "question": "JS'da stringni qanday teskari qilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1986",
+        "question": "setTimeout kechroq bajarilishi uchun nima qilish kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1990",
+        "question": "this nimaga bog'liq?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1992",
+        "question": "O'z kodingiz sifatini qanday baholaysiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1994",
+        "question": "z-index nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2000",
+        "question": "Funksional tilni o'rganish nima uchun kerak?",
+        "chance": "3",
+        "tag": "Umumiy"
+    },
+    {
+        "id": "2002",
+        "question": "O'qishdagi rivojlanish rejangiz qanday?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2004",
+        "question": "React'da qanday kutubxonalar mashhur?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "2006",
+        "question": "Redux uchun qanday mashhur yondashuvlar ixtiro qilingan?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2010",
+        "question": "Soketlar nima uchun kerak?",
+        "chance": "3",
+        "tag": "Networking"
+    },
+    {
+        "id": "2012",
+        "question": "Loyihada qanday strukturalardan foydalanasiz?",
+        "chance": "3",
+        "tag": "Yo'q"
+    },
+    {
+        "id": "2014",
+        "question": "HTTP so'rovi nima uchun yuboriladi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "2016",
+        "question": "DNS nima?",
+        "chance": "3",
+        "tag": "Networking"
+    },
+    {
+        "id": "2018",
+        "question": "JS'ning qanday o'ziga xosliklari bor?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2022",
+        "question": "JS'dagi asinxronlik qanday muammoni hal qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2024",
+        "question": "React va boshqa kutubxonalar nima uchun yaratilgan?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2026",
+        "question": "Render qanchalik tez-tez sodir bo'ladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2099",
+        "question": "Blokni 45 gradusga qanday burgan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2034",
+        "question": "Sayt foydalanuvchi uchun qanday render qilinadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "2036",
+        "question": "Skriptlarning bajarilish ketma-ketligini qanday belgilash mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "2097",
+        "question": "Blokdan tushadigan soyani qanday qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2038",
+        "question": "Saytni qanday optimallashtirish mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "2095",
+        "question": "Sahifadagi har bir elementga stillarni qaysi selektor bilan qo'shish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2040",
+        "question": "Agar mikro task yana mikro task yaratsa nima bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2042",
+        "question": "Props state'dan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "2093",
+        "question": "[disabled] atributiga ega tugmalar stillarini qanday o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2091",
+        "question": "Fayllarni yuklash uchun input'ni qanday stilizatsiya qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2089",
+        "question": "Matnni bosh/kichik harflarga o'tkazish uchun qaysi (CSS) xususiyat ishlatiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2087",
+        "question": "!important nima uchun ishlatiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2083",
+        "question": "Input'larning qanday turlari bo'ladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "2081",
+        "question": "Kursorni qanday o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2079",
+        "question": "Semantik elementlar nima va ular nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "2077",
+        "question": "border outline'dan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2072",
+        "question": "ES6'ning qanday yangiliklari bilan tanishsiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2071",
+        "question": "Redux Thunk nima uchun kerak va usiz ishlasa bo'ladimi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2069",
+        "question": "Sonlar massivini qanday saralagan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2074",
+        "question": "@keyframes nima uchun kerak va qanday ishlaydi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2066",
+        "question": "Frontend'ni verstka tomonlama yoki faqat JS tomonlama o'rgangansizmi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2076",
+        "question": "Brauzer veb-sahifani qanday qayta ishlaydi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "2065",
+        "question": "Kompaniyada merge yoki rebase qanday sodir bo'ladi?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "2078",
+        "question": "Ssilkani bosganda sahifani boshqa oynada qanday ochish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "2064",
+        "question": "Git'da nostandart ishlarni qilishga to'g'ri kelganmi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2080",
+        "question": "overflow xususiyati nima qiladi va qachon ishlatish kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2084",
+        "question": "Flexbox konteyneridagi justify-content va align-items nima uchun javob beradi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2062",
+        "question": "Arxitekturani qurishda qanday yondashuvdan foydalangansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2086",
+        "question": "background-size'ning qanday qiymatlari bo'ladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2061",
+        "question": "Loyihada vazifalar bilan ishlash qanday sodir bo'ladi?",
+        "chance": "3",
+        "tag": "PM"
+    },
+    {
+        "id": "2090",
+        "question": "data-* atributlarini ishlatish nima uchun tavsiya etiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "2059",
+        "question": "Nima ko'proq yoqadi: React yoki Vue?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2092",
+        "question": "Atribut selektori nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2094",
+        "question": "<span> elementining stillarini qanday o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2096",
+        "question": "Qaysi xususiyat elementni yashirishga imkon beradi, lekin sahifada u egallagan joyni saqlab qoladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2098",
+        "question": "Matndan tushadigan soyani qanday qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2058",
+        "question": "Dasturlashga qanday kirib kelgansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2102",
+        "question": "Preprotsessorlar nima uchun ishlatiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2055",
+        "question": "Funksiya yaratishning qanday usullarini bilasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2054",
+        "question": "async/await nima uchun o'ylab topilgan?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2053",
+        "question": "Asinxron tarzda nimadir qilishning nechta usuli bor?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2052",
+        "question": "Linter nima uchun kerak?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "2051",
+        "question": "JS linteridan qanday foydalangansiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "2050",
+        "question": "Brauzerda box-sizingning default qanday qiymati turadi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2114",
+        "question": "Obyekt propertysini qanday olish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2049",
+        "question": "box-sizing qiymatlari element o'lchamiga qanday ta'sir qiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2048",
+        "question": "box-sizing'ning qanday qiymatlari bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2118",
+        "question": "Qaysi asosiy React hook'larni bilasiz va ishlatasiz?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "2046",
+        "question": "Selektordan qanday foydalanish kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "2045",
+        "question": "Semantika nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "2122",
+        "question": "Computed properties nima u, qanday ishlatiladi?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2043",
+        "question": "Nimani tanlaysiz: OOP yoki Functional Programming?",
+        "chance": "3",
+        "tag": "Umumiy"
+    },
+    {
+        "id": "2126",
+        "question": "Vuex'da forma qiymatlari qanday qayta ishlanadi?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2130",
+        "question": "Polling'ga qanday alternativalarni bilasiz?",
+        "chance": "3",
+        "tag": "Networking"
+    },
+    {
+        "id": "2134",
+        "question": "Autentifikatsiya qanday sodir bo'ladi?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "2136",
+        "question": "Sintaktik murakkablik nima?",
+        "chance": "3",
+        "tag": "Yo'q"
+    },
+    {
+        "id": "2138",
+        "question": "Jamoada ishlashga qanday qaraysiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2140",
+        "question": "Versiyalarni boshqarish tizimi sifatida nimadan foydalanasiz?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "2142",
+        "question": "Redux va MobX o'rtasidagi farqlar qanday?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2146",
+        "question": "Inversion of Control - IoC nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "2150",
+        "question": "Serverdagi va brauzerdagi event loop ishlashidagi farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "2154",
+        "question": "Qaysi loyihalarni mustaqil ravishda olib borgansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "2166",
+        "question": "Render funksiyasida nimani yozmaslik kerak?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "2170",
+        "question": "Redux'ga qanday alternativalar bor?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2174",
+        "question": "Backend'ga so'rovlarni qayerda amalga oshirgan ma'qul?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2182",
+        "question": "Computed properties (Vue?) nima?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2194",
+        "question": "v-for direktivasini ishlatganda nima uchun key ko'rsatish kerak?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2198",
+        "question": "v-model'ning qanday modifikatorlari bor?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2202",
+        "question": "Element stillarini dinamik ravishda qanday o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "2206",
+        "question": "Vue'dagi teleportlar nima?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2214",
+        "question": "Vuex'dagi mutations haqida gapirib bering",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2218",
+        "question": "Vue'da komponentni majburiy yangilash qanday qilinadi?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "2222",
+        "question": "Brauzerda ma'lumotlarni saqlashning qanday usullarini bilasiz?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "2226",
+        "question": "useContext (React hook) nima uchun kerak?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "3466",
+        "question": "JS'dagi expressionlar nima qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3467",
+        "question": "ES Modules'da modullar qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3469",
+        "question": "ES Modules/require'ni nima bilan almashtirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3501",
+        "question": "Deskriptorlar haqida nimalarni bilasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3504",
+        "question": "Nima uchun biz input'dagi elementga murojaat qila olmaymiz?",
+        "chance": "3",
+        "tag": "Yo'q"
+    },
+    {
+        "id": "3508",
+        "question": "HTML sahifasini yig'ish uchun nechta teg kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3511",
+        "question": "HTML sahifasini yana qanday strukturalash mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3514",
+        "question": "HTML'da 6 guruh sarlavha (h1-h6) nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3516",
+        "question": "Bir nechta h1 sarlavhasini qo'shish mumkinmi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3517",
+        "question": "HTML sarlavhalarining to'g'ri ierarxiyasini qanday tekshirish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3521",
+        "question": "Sahifadagi kontentni semantik jihatdan qanday ajratish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3525",
+        "question": "aside, article va section o'rtasidagi farq nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3527",
+        "question": "Kontentni jadvallar ko'rinishida rasmiylashtirishga to'g'ri kelganmi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3531",
+        "question": "Jadvallar blokini yaratish uchun nimaga moyil bo'lar edingiz?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3535",
+        "question": "HTML'dagi jadval strukturasi qanday ko'rinishda?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3539",
+        "question": "HTML jadvallarini adaptatsiya qilish muammosi nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3542",
+        "question": "Qanday tasvir formatlari mavjud?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3544",
+        "question": "Fallback bilan WebP'ni qanday qilish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3546",
+        "question": "SVG'ni HTML hujjatiga qanday joylashtirish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3548",
+        "question": "<iframe>'dan qanday foydalangansiz?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3551",
+        "question": "<iframe> yuklanganini qanday bilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3553",
+        "question": "<iframe> va asosiy sahifa o'rtasida qanday muloqot qilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3559",
+        "question": "JS'da qanday sikllar bor va ular qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3561",
+        "question": "for siklining while'dan farqi nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3563",
+        "question": "Obyektlarni klonlashning qanday usullarini bilasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3565",
+        "question": "JS'da sanalar bilan qanday ishlash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3568",
+        "question": "UTC (Coordinated Universal Time) nima uchun kerak?",
+        "chance": "3",
+        "tag": "Umumiy"
+    },
+    {
+        "id": "3569",
+        "question": "Date.now() bilan kod qismining ishlash tezligini qanday o'lchashimiz mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3572",
+        "question": "Prototipni patch qilish (prototype patching) nima uchun yomon?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3575",
+        "question": "Elementga fokus berishning qanday usullari bor?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3578",
+        "question": "div, img, p teglarining farqi nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3585",
+        "question": "Responsivlikka qanday yondashuvlar bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3588",
+        "question": "CSS'dagi importlar va modullik haqida gapirib bering",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3590",
+        "question": "Sass'dan nima uchun foydalanasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3592",
+        "question": "Preprotsessorlarda ampersand (&) ishlatishning kamchiligi",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3596",
+        "question": "Elementni boshqasidan yuqoriroq bo'lishga qanday majbur qilishimiz mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3601",
+        "question": "Mutable va immutable ma'lumot turlarining asosiy farqi nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3603",
+        "question": "Closure scopedan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3605",
+        "question": "Asinxronlik nima?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "3607",
+        "question": "Sinxron kodning asinxron koddan farqi nimada?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "3609",
+        "question": "use strict nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3611",
+        "question": "Funksiyalar qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3612",
+        "question": "Web API'larda event loop qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3614",
+        "question": "Event loop bilan qanday o'zaro aloqada bo'lasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3615",
+        "question": "Queue va stackning prinsipial farqi nimada?",
+        "chance": "3",
+        "tag": "Algoritmlar, strukturalar"
+    },
+    {
+        "id": "3620",
+        "question": "DOM yuklanganini qanday tushunish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3621",
+        "question": "Vebdagi interaktivlik nima hisobiga ta'minlanadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3623",
+        "question": "Qanday event turlari mavjud?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3625",
+        "question": "HTML, CSS va JS o'zaro qanday bog'liq?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3627",
+        "question": "Agar bizda CSS bo'lsa, nima uchun strong, center (deprecated) kabi teglar mavjud?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3628",
+        "question": "<iframe> nima va u nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3630",
+        "question": "HTML'dagi whitespace ning qanday o'ziga xosliklari bor?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3632",
+        "question": "<iframe> ishlatishning qanday kamchiliklari bor?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3634",
+        "question": "Nima uchun qidiruv tizimlari uchun (SSR) ishlatilishi shunchalik muhim?",
+        "chance": "3",
+        "tag": "SEO"
+    },
+    {
+        "id": "3636",
+        "question": "SSR'ning kamchiliklari nimadan iborat?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "3638",
+        "question": "User agent stillari va ular bilan ishlash usullari haqida gapirib bering",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3640",
+        "question": "Markazlashtirish usullari nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3642",
+        "question": "Markazlashtirish usullarini qanday ishlatish kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3646",
+        "question": "Gorizontal markazlashtirishning qanday usullari mavjud?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3649",
+        "question": "inline-block orqali markazlashtirishning qanday usullari bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3652",
+        "question": "ES Modules va CommonJS modullari o'rtasidagi farq nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3654",
+        "question": "ESLint nima uchun kerak?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "3657",
+        "question": "Docker nima uchun kerak?",
+        "chance": "3",
+        "tag": "Docker"
+    },
+    {
+        "id": "3659",
+        "question": "CI/CD nima va u qanday ishlaydi?",
+        "chance": "3",
+        "tag": "CI/CD"
+    },
+    {
+        "id": "3662",
+        "question": "Nginx nima uchun kerak?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "3666",
+        "question": "Node.js'ning afzalliklari nimada?",
+        "chance": "3",
+        "tag": "Node.js"
+    },
+    {
+        "id": "3669",
+        "question": "HTTP orqali rasm olishimiz mumkinmi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "3672",
+        "question": "Brauzer rasmni rasm ekanligini qanday tushunadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3677",
+        "question": "Serverdan rasmni qanday usullar bilan olishimiz mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3848",
+        "question": "Brauzer API javobidagi kontent turini (rasm, matn va hk.) qanday tushunadi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "3851",
+        "question": "Brauzer rasmni yuklash kerakligini qanday tushunadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3854",
+        "question": "Brauzer aynan rasmni ko'rsatish kerakligini, matn emasligini qanday tushunadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3857",
+        "question": "Javob kodlari (HTTP status codes) nima va ular bir-biridan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "3860",
+        "question": "So'rov metodlarining qanday turlari bo'ladi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "3862",
+        "question": "HTML formani qanday qilasiz?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3865",
+        "question": "type=\"submit\" nimani anglatadi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3871",
+        "question": "Teglar uchun default stillar qayerdan keladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3873",
+        "question": "Agar butun verstkani div'larda qilsa, qanday muammolar paydo bo'lishi mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3874",
+        "question": "HTML entities nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3875",
+        "question": "HTML entities ro'yxatlarini qayerdan topish mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3877",
+        "question": "position: sticky'ning qanday o'ziga xosliklarini bilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3886",
+        "question": "ES modullar nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3891",
+        "question": "XSS nima va u nima bilan xavfli?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "3895",
+        "question": "Cookie'ni JS'dan qanday himoya qilish mumkin?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "3899",
+        "question": "CSRF (Cross-Site Request Forgery) nima?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "3903",
+        "question": "innerHTML bilan ishlashning xavfi nimada?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "3911",
+        "question": "Yana qanday dasturlash paradigmalarini bilasiz?",
+        "chance": "3",
+        "tag": "Umumiy"
+    },
+    {
+        "id": "3914",
+        "question": "Klass description klass instancedan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "OOP"
+    },
+    {
+        "id": "3916",
+        "question": "CQRS (Command Query Responsibility Segregation) nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "3919",
+        "question": "GRASP (General Responsibility Assignment Software Patterns) nima?",
+        "chance": "3",
+        "tag": "Паттерны"
+    },
+    {
+        "id": "3923",
+        "question": "DRY, KISS nima?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "3925",
+        "question": "Kod yaxshi yozilganligini qanday tushunasiz?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "3926",
+        "question": "Kodnі tushunishning yana qanday muhim qismi bor?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "3929",
+        "question": "HTML, JS va CSS nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "3931",
+        "question": "HTML'ga xos bo'lgan asosiy narsalar qaysilar?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3934",
+        "question": "section, header kabi teglarning ma'nosi nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3938",
+        "question": "Nima uchun biz section va header teglari o'rniga oddiy div ishlata olmaymiz?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3942",
+        "question": "Turli teglar yakuniy foydalanuvchi uchun qanday farq qiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3947",
+        "question": "Turli teglarni aniq vaziyatlar uchun qanday ishlatish mumkinligi haqida gapiradigan HTML xarakteristikasi qanday nomlanadi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "3953",
+        "question": "Stillarni ulashning turli yondashuvlarining farqlari nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3955",
+        "question": "CSS yozish bo'yicha qanday yondashuvlarni bilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3957",
+        "question": "CSS'da stillarning turli prioritetlari qanday ishlaydi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3959",
+        "question": "Adaptiv dizayn responsiv dizayndan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "3961",
+        "question": "Funksiyaning tipi qanday?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3964",
+        "question": "Massivlar, obyektlar va funksiyalar nima bilan o'xshash?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "3966",
+        "question": "JS'da qanday operatorlar bor?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4245",
+        "question": "Delegatsiya (event delegation?) nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4248",
+        "question": "Brauzerdagi event model nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4254",
+        "question": "Vue qanday muammolarni hal qiladi, jQuery qanday?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "4256",
+        "question": "v-bind uchun modifikatorlar bilan tanishmisiz?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "4258",
+        "question": "Nima tezroq: DOM yoki Virtual DOM?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4260",
+        "question": "watch va computed (Vue?) nima, ular qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Vue"
+    },
+    {
+        "id": "4262",
+        "question": "Agar funksional ko'rinish doirasi mavjud bo'lsa, blokli ko'rinish doirasi nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4263",
+        "question": "JS'dagi OOP boshqa tillardagi OOP'dan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "OOP"
+    },
+    {
+        "id": "4266",
+        "question": "JS'dagi klasslarning boshqa tillardagi klasslardan farqi nimada?",
+        "chance": "3",
+        "tag": "OOP"
+    },
+    {
+        "id": "4269",
+        "question": "Prototipga statik metodni qanday qo'shgan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4272",
+        "question": "Obyektning qandaydir xususiyatini immutable qilib qanday qilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4276",
+        "question": "Qanday qilib barcha elementlarda bir xil xususiyatlar (class, id va hk.) mavjud bo'ladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4279",
+        "question": ".getElementsByClassName() va .querySelectorAll() o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4280",
+        "question": "Versiyalarni boshqarish tizimi nima uchun kerak?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4282",
+        "question": "Bizning o'zgarishlarimiz branch'ga qanday tushadi?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4286",
+        "question": "Git'ni nimadirni unutishga qanday majbur qilish mumkin?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4288",
+        "question": "Kommitni qanday qayta nomlash mumkin?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4292",
+        "question": "amend va squash (git) o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4294",
+        "question": "cherry-pick (git) nima?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4298",
+        "question": "Semantik kommitlar nima?",
+        "chance": "3",
+        "tag": "Git"
+    },
+    {
+        "id": "4301",
+        "question": "Umuman nimadirni optimallashtirish nima uchun kerak?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "4317",
+        "question": "Force layout (layout thrashing) nima va nima uchun bu yomon?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "4320",
+        "question": "JS orqali nimadirni qanday animatsiya qilamiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4323",
+        "question": "Memory leak nima va nima uchun yomon?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "4325",
+        "question": "Memory leak jarayoni qanday sodir bo'ladi?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "4328",
+        "question": "Biz garbage collection'ga ta'sir qila olamizmi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4331",
+        "question": "Memory leakni qanday tuzatish mumkin?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "4334",
+        "question": "Komponent nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4337",
+        "question": "Nima uchun biz kodni komponentlarga ajratamiz?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "4339",
+        "question": "State global ekanligini qanday aniqlash mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4343",
+        "question": "Nima uchun React reaktiv emas?",
+        "chance": "3",
+        "tag": "React"
+    },
+    {
+        "id": "4344",
+        "question": "Ikki tomonlama (two-way) va bir tomonlama (one-way) ma'lumotlarni bog'lash nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4345",
+        "question": "Operator turlari haqida gapirib bering",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4346",
+        "question": "SPA (Single Page Application) klassik saytdan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4631",
+        "question": "Nima uchun biz ilovani alohida backend va frontend'ga ajratishimiz kerak?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4634",
+        "question": "HTTPS shifrlashdan tashqari nima beradi?",
+        "chance": "3",
+        "tag": "Security"
+    },
+    {
+        "id": "4636",
+        "question": "Resurslar yuklanishini qanday tezlashtirishimiz mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4674",
+        "question": "Baza kengayib ketganda va sekinlashganda vaziyatni qanday tuzatish mumkin?",
+        "chance": "3",
+        "tag": "Ma'lumotlar bazasi"
+    },
+    {
+        "id": "4677",
+        "question": "Hisobotlarni qayerga qo'yamiz?",
+        "chance": "3",
+        "tag": "Ma'lumotlar bazasi"
+    },
+    {
+        "id": "4678",
+        "question": "ORM'siz ma'lumotlar bazasi so'rovini qanday loyihalashtirgan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "Ma'lumotlar bazasi"
+    },
+    {
+        "id": "4680",
+        "question": "Agar bir xil hisobot ko'p marta so'ralsa nima qilish kerak?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4685",
+        "question": "YouTube'dan tashqari qanday ma'lumot manbalaridan foydalanasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4687",
+        "question": "Frontend'da nima qiziq?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4688",
+        "question": "StackBlitz haqida nima deb o'ylaysiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4689",
+        "question": "Agar ikkita kontekstni ketma-ket bind qilsa nima bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4696",
+        "question": "Nima uchun asinxronlik muhim?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "4697",
+        "question": "DI (Dependency Injection)ning qanday muammolari bor?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4698",
+        "question": "Bunday katta monorepozitoriy bilan qanday yashayapsiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4699",
+        "question": "Ishda nima qiyinchiliklar tug'diradi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4701",
+        "question": "Angular'da nima yoqmaydi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4702",
+        "question": "SSR'ga qanday alternativalar bor?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4704",
+        "question": "Qachon SSR'siz iloj yo'q?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4706",
+        "question": "AMP (Accelerated Mobile Pages) sahifalari nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4707",
+        "question": "Qaysi saytlarga AMP foydali bo'lishi mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4709",
+        "question": "Qaysi hollarda loyihaga TypeScript olish kerak?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "4710",
+        "question": "TypeScript'ga alternativa sifatida JSDoc haqida nima deb o'ylaysiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4712",
+        "question": "Qanday zamonaviy tooling (vositalar)dan foydalanasiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4713",
+        "question": "Qachon type, qachon interface ishlatish kerak?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "4714",
+        "question": "Relayout (layout thrashing)ni optimallashtirishning qanday usullarini bilasiz?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "4716",
+        "question": "Nima uchun bizda CSS'da ota element uchun selektor yo'q?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4717",
+        "question": "Inkremental DOM'ning Virtual DOM'ga nisbatan qanday afzalliklari bor?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4721",
+        "question": "Eng ko'p esda qolgan xato?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4722",
+        "question": "Hozirgi ishdagi eng katta og'riq (muammo)?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4724",
+        "question": "Agar ishni o'zgartirishga to'g'ri kelsa, qanday qiyinchiliklar paydo bo'ladi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4726",
+        "question": "Freymvorkni qanday to'g'ri tanlash kerak?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4731",
+        "question": "Legacy kodni yangi texnologiyalarga qayta yozish nima uchun kerak?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "4738",
+        "question": "Qaysi holatda SPA (Single Page Application) kerak?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4739",
+        "question": "O'zingizda mikrofrontendlar borligini qanday aniqlash mumkin?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4741",
+        "question": "BFF (Backend for Frontend) ning qanday afzalliklari va kamchiliklari bor?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4742",
+        "question": "Nimani ishlatgan yaxshiroq: REST yoki GraphQL?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4744",
+        "question": "Ideal TDD (Test-Driven Development) qanday ko'rinishda bo'lishi kerak?",
+        "chance": "3",
+        "tag": "Testing"
+    },
+    {
+        "id": "4745",
+        "question": "Ishlab chiqish yo'lida qanday qiyinchiliklar paydo bo'lgan?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4746",
+        "question": "SPA'da formalar bilan qanday ishlaysiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4748",
+        "question": "Formani qanday tozalash mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4749",
+        "question": "Ikki tomonlama bog'lanish mexanizmi bizga nima uchun kerak?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4751",
+        "question": "Formani reset qilish bilan bog'liq muammolar nimadan iborat edi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4754",
+        "question": "Blokli element inline elementdan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4755",
+        "question": "Elementni 100% ga qanday cho'zish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4757",
+        "question": "Element fonini qanday reset qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4758",
+        "question": "Sahifadagi barcha yashirin elementlarni qanday topish mumkin?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4760",
+        "question": "Kerakli joyga scroll bo'lganda amalni qanday bajarish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4761",
+        "question": "Primitivda metodlar (.toString() va hk.) qayerdan paydo bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4762",
+        "question": "Obyektni o'zgartirishni qanday taqiqlash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4764",
+        "question": "for...in va for...of sikllarining farqi nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4765",
+        "question": "Foydalanuvchi uchun kontent yuklanish tezligiga qaysi parametrlar ta'sir qilishi mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4768",
+        "question": "Brauzer resursni keshlash kerakligini qanday tushunadi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4770",
+        "question": "Nima uchun fayl nomlarida xesh kerak (masalan, Vue CLI misolida)?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4772",
+        "question": "Hot reload qanday ishlaydi (masalan, Vue CLI misolida)?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4781",
+        "question": "Custom shriftlarni ulashda qanday muammolarga duch kelgansiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4783",
+        "question": "data'ga ketma-ket ko'p marta qiymat tayinlash re-render'ni keltirib chiqaradimi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4785",
+        "question": "Qancha vaqt stajirovka qilgansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4790",
+        "question": "Qanday ish boshlagansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4791",
+        "question": "Ingliz tilini bilish darajangiz qanday?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4793",
+        "question": "Qachon id, qachon esa class ishlatgan ma'qul?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4794",
+        "question": "id va class selektorli stillarning farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4795",
+        "question": "Elementlarni pozitsiyalashning turli xil turlari o'rtasidagi farq qanday?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4797",
+        "question": "screen'dan farqli qanday media xususiyatlarini bilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4799",
+        "question": "Strelkani qanday verstka qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4800",
+        "question": "Event handler qanday olib tashlash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4802",
+        "question": "Object.getOwnPropertyNames() va Object.keys() o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4804",
+        "question": "package-lock.json nima uchun kerak?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4805",
+        "question": "put va post so'rovlarining farqi nimada?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4807",
+        "question": "Git'dagi staging area nima?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4809",
+        "question": "Verstkani qanday o'rgangansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4810",
+        "question": "Elementni 45 darajaga burish kerak bo'lsa, buni qanday qilgan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4812",
+        "question": "flex va grid o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4814",
+        "question": "Saytni qanday qilib responsive qilish mumkin?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4816",
+        "question": "em ning rem'dan farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4817",
+        "question": "Mobil qurilmalarda rasm kichikroq hajmda yuklanishini qanday ta'minlash mumkin?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4818",
+        "question": "Sonning NaN ekanligini qanday tekshirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4820",
+        "question": "Sonning butun ekanligini qanday tekshirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4822",
+        "question": "Ikki o'zgaruvchining qiymatlarini qanday almashtirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4829",
+        "question": "slice va splice o'rtasidagi asosiy farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4830",
+        "question": "Sonlar massivini o'sish tartibida qanday saralash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4832",
+        "question": "Obyektning bo'sh ekanligini qanday bilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4833",
+        "question": "freeze metodi nima qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4835",
+        "question": "Massiv elementlarining tartibini qanday o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4837",
+        "question": "Spread operatori satr bilan nima qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4838",
+        "question": "Massivdan barcha dublikatlarni qanday usulda o'chirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4840",
+        "question": "Massivdan barcha elementlarni qanday o'chirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4842",
+        "question": "Massivda faqat toq sonlarni qanday saralash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4844",
+        "question": "Next.js'da qanday turdagi loyihalarni amalga oshirgansiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4846",
+        "question": "Backend bilan ishlash tajribangiz qanday?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4849",
+        "question": "HTTP OPTIONS so'rovi deganda nimani tushunasiz?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4851",
+        "question": "CDN nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4852",
+        "question": "CDN nima uchun kerak?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4854",
+        "question": "Statika uchun alohida domenlar haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4898",
+        "question": "JS bo'yicha bilimlaringiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4899",
+        "question": "JS bilan bog'liq qanday frilans buyurtmalaringiz bo'lgan?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4900",
+        "question": "Stajirovka davomida qanday vazifalarni bajarasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4901",
+        "question": "div va span o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4902",
+        "question": "inline-block nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4903",
+        "question": "Agar console.log'da this'ni yozsak, konsolda nima chiqadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4904",
+        "question": "Obyektning massiv ekanligini qanday tekshirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4905",
+        "question": "&& va || mantiqiy operatorlari nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4906",
+        "question": "Yangi bilimlarni qayerdan olasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4908",
+        "question": "Skriptlarni async va defer orqali ulash o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4909",
+        "question": "Massivlarni aylanib chiqishning qanday metodlarini bilasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4910",
+        "question": "for va foreach o'rtasidagi asosiy farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4911",
+        "question": "reduce metodini qachon ishlatish kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4912",
+        "question": "SSR'ning afzalliklari nimada?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4913",
+        "question": "HTTP'da keshlashtirish uchun javobgar bo'lgan qanday sarlavhalar (headers) mavjud?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4914",
+        "question": "Cookie faylni 3 kundan keyin o'chib ketadigan qilib qanday o'rnatish mumkin?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4915",
+        "question": "Cookie'larda xavfsizlik uchun javobgar qanday maydonlar mavjud?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4916",
+        "question": "Bu kompaniyada qanday turdagi loyihalarni amalga oshirasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4917",
+        "question": "Bu kompaniyada qancha vaqtdan beri ishlaysiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4920",
+        "question": "JS'ni qanday usullar bilan o'rgandingiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4922",
+        "question": "JS bo'yicha qanday kitoblarni o'qigansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4923",
+        "question": "BEM bilan ishlash tajribangiz qanday?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4925",
+        "question": "Verstka bo'yicha tajribangiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4926",
+        "question": "Animatsiyalar bilan ishlash tajribangiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4927",
+        "question": "Nima uchun operator ternar deb ataladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4928",
+        "question": "Qaysi hollarda array.forEach va array.map ishlatiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4929",
+        "question": "O'zgaruvchida massiv borligini qanday aniqlash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4930",
+        "question": "EventListener'ni qanday o'chirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4931",
+        "question": "JS yordamida brauzer tarixida oldinga/orqaga qanday harakatlanish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4932",
+        "question": "Joriy sahifaning URL'ini qanday olish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4933",
+        "question": "Foydalanuvchini URL'ga qanday yo'naltirish (redirect) mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4934",
+        "question": "Spread va rest operatorlari o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4935",
+        "question": "Spread va rest operatorlari nima uchun ishlatiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4936",
+        "question": "Promise.all nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4937",
+        "question": "Brauzerda cookie'ni qanday o'rnatish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4938",
+        "question": "Oxirgi ishlagan loyihangiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4939",
+        "question": "Agar typeof null yozilsa nima sodir bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4940",
+        "question": "Obyekt kontekstini qanday usullar bilan o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4941",
+        "question": "arguments massivi nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4942",
+        "question": "Qaysi holda tartib muhim: obyektni yoki massivni nusxalashda?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4943",
+        "question": "Massiv metodlari nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4944",
+        "question": "Qaysi hollarda map ishlatgan yaxshiroq?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4945",
+        "question": "Qaysi hollarda foreach ishlatgan yaxshiroq?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4946",
+        "question": "Qaysi usul massivni o'zgartiradi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4947",
+        "question": "Server bilan aloqada qanday vositalardan foydalanasiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4948",
+        "question": "Promise'ning qanday statuslari bor?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4949",
+        "question": "Promise'dan oldin nima ishlatilgan?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4950",
+        "question": "Local storage, session storage va cookie'larda saqlanadigan ma'lumotlar kimga ko'rinadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4951",
+        "question": "Local storage'da ma'lumotlar qanday formatda saqlanadi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4952",
+        "question": "React nima uchun kerak?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4953",
+        "question": "React'ning qanday afzalliklari bor?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4954",
+        "question": "JSX doirasida JS kodini qanday ishlatish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4955",
+        "question": "JSX doirasidagi JS kodida nimalarni yozish mumkin emas?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4956",
+        "question": "JSX doirasida JS kodini yozishda nimalardan foydalanish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4957",
+        "question": "JS'dagi Virtual DOM o'zini qanday ma'lumot turi sifatida namoyon qiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4958",
+        "question": "Nima uchun brauzer DOM'idan to'g'ridan-to'g'ri foydalanish mumkin emas?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4959",
+        "question": "State va props nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4960",
+        "question": "Komponentlar holatini qanday o'zgartirish kerak?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4961",
+        "question": "useState nima qaytaradi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4962",
+        "question": "Funksiya qiymatlari nimada joylashgan?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4963",
+        "question": "useEffect nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4964",
+        "question": "useEffect'da nimalardan foydalanish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4965",
+        "question": "Bog'liqliklar massivi (dependency array) nima uchun ko'rsatiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4966",
+        "question": "Serverga so'rovlardan tashqari, useEffect'da ishlatish mumkin bo'lgan narsalarga misollar keltiring.",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4967",
+        "question": "Yon ta'sirlar (side effects) nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4969",
+        "question": "JSX'da ma'lumotlar ro'yxatini ko'rsatish uchun nima ishlatiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4970",
+        "question": "JSX'da kalitlar (keys) nima uchun ishlatiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4971",
+        "question": "JSX'da qanday kalitlar mavjud?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4972",
+        "question": "Boshqariladigan (controlled) va boshqarilmaydigan (uncontrolled) komponentlar haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4973",
+        "question": "Redux va komponent o'rtasida ma'lumotlar oqimi qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4974",
+        "question": "Redux'da holatni (state) qanday o'zgartirish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4975",
+        "question": "Redux'dan tashqari, props drilling bilan kurashishga qanday usul yordam beradi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4632",
+        "question": "HTTP qanday ishlaydi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4977",
+        "question": "Konstanta nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4978",
+        "question": "Massiv nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4980",
+        "question": "Kliyentlar va server o'rtasidagi o'zaro ta'sir qanday amalga oshiriladi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4983",
+        "question": "JSON nima?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "4984",
+        "question": "true/false qanday son qiymatlariga ega?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4985",
+        "question": "Satr songa qanday o'zgartiriladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4986",
+        "question": "Singleton nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4987",
+        "question": "Klasslar nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4988",
+        "question": "Loyihalash patternlari (dizayn patternlar) nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "4989",
+        "question": "Debug nima?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "4990",
+        "question": "Qanday qilib IT mutaxassisi bo'lgansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "4991",
+        "question": "Brauzerda ba'zi CSS xususiyatlarining nomuvofiqligi muammosini qanday hal qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "4992",
+        "question": "div va span teglar qachon ishlatiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "4994",
+        "question": "Massivlar va obyektlarni aylanib chiqishning asosiy metodlarini ayting.",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "4995",
+        "question": "React renderining asosiy xususiyati nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4996",
+        "question": "React'da react-router-dom nima uchun ishlatiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4997",
+        "question": "SPA (Single Page Application) nima?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "4998",
+        "question": "CRUD nima va uning so'rov parametrlari qanday?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "4999",
+        "question": "TypeScript'da qanday ma'lumot turlari qo'llab-quvvatlanadi?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "5000",
+        "question": "Sahifa yuklanishi qanday sodir bo'ladi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "5001",
+        "question": "Brauzer HTML faylni qanday parse qiladi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "5002",
+        "question": "Brauzer HTML'ni parse qilishda o'qigan tashqi resurslar bilan nima sodir bo'ladi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "5003",
+        "question": "Meta teglar nima va ular nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5004",
+        "question": "HTML5'ga qanday yangi teglar kiritildi va qaysi teglar eskirgan?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5005",
+        "question": "Screen reader va accessibility (foydalanish imkoniyati) nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5006",
+        "question": "HTML'da metodologiya nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5007",
+        "question": "CSS o'lchov birliklarining (units) qanday turlari mavjud?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5008",
+        "question": "Veb-verstkada qanday mashhur rasm formatlari ishlatiladi?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "5009",
+        "question": "Sahifadagi rasmlar yuklanishini qanday optimallashtirish mumkin?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "5010",
+        "question": "SVG shriftmi yoki sprite ishlatgan yaxshiroqmi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5011",
+        "question": "Psevdoklasslar va psevdoelementlarni tasvirlab bering.",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5012",
+        "question": "Box modeli nima, u nimalardan iborat va uning qanday turlari bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5013",
+        "question": "Margin collapsing nima va nima uchun sodir bo'ladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5014",
+        "question": "Float nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5015",
+        "question": "Rasmning matn bilan o'ralishini qanday bekor qilish mumkin?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5017",
+        "question": "Nima uchun flow sahifa performancega yomon ta'sir qiladi?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "5018",
+        "question": "Flexbox'ning ishlash mohiyati nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5019",
+        "question": "display: block ning display: inline'dan farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5020",
+        "question": "Adaptiv va responsive veb-sahifalar nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5021",
+        "question": "display: none ning visibility: hidden'dan farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5022",
+        "question": "Vendor prefikslari nima?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5023",
+        "question": "Berilgan breykpointlar (breakpoints) ishlashi uchun CSS'da nimalarni ko'rsatish kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5024",
+        "question": "Nima uchun preprotsessorlar mashhur bo'lib ketdi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5025",
+        "question": "CSS'dagi o'zgaruvchilarning preprotsessorlardagi o'zgaruvchilardan farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5026",
+        "question": "CSS'dagi importlarning preprotsessorlardagi importlardan farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5027",
+        "question": "Loyihaga ulash uchun to'g'ri kutubxonalarni qanday tanlash kerak?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5028",
+        "question": "HTML va CSS'dagi kod sifati (code quality) nima?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "5136",
+        "question": "Qaysi psevdoklasslarni bilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5029",
+        "question": "Heksagonal arxitektura haqida va u qayerdan paydo bo'lganligi haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5030",
+        "question": "Portlar va adapterlar arxitekturasi nima?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5031",
+        "question": "Adapter nima uchun kerak?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5032",
+        "question": "GraphQL geksagonal arxitekturaga qanday mos keladi?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5033",
+        "question": "Adapter OVP patterni bilan qanday bog'liq?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5034",
+        "question": "CQRS Event Sourcing bilan qanday bog'liq?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5035",
+        "question": "Dependency Injection haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5036",
+        "question": "React'dan ma'lumotlarga qanday kirish (access) mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5037",
+        "question": "Front-end va server o'rtasidagi ma'lumotlar almashinuvini kamaytirish uchun qanday optimallashtirishlar bo'lishi mumkin?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "5038",
+        "question": "Qaysi yoshdagi odamlarga dars berasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5039",
+        "question": "Ishda qaysi dasturlash tilidan foydalanasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5040",
+        "question": "Qaysi dasturlash tillaridan dars berasiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5041",
+        "question": "JS va Python'ning o'xshashliklari nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5042",
+        "question": "JS va Python o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5043",
+        "question": "O'zgaruvchilarning scope'ini nima yaratadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5044",
+        "question": "Qaysi bloklar yangi kontekstlarni yaratadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5045",
+        "question": "Figurali qavslar orqali kontekst yaratish imkoni bo'lsa, nima uchun o'zini o'zi chaqiruvchi funksiyalarni (IIFE) yaratish kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5046",
+        "question": "JS'da identifikatorni qanday hisoblash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5047",
+        "question": "JS'dagi asinxronlik haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "5048",
+        "question": "Qanday abstraksiyalar bilan duch kelgansiz?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5049",
+        "question": "Nima uchun oddiy generatorlar asinxron kod yozishga imkon beradi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5050",
+        "question": "React'da renderingni optimallashtirish haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5051",
+        "question": "React'da shadow DOM bormi yoki faqat virtual DOM?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5052",
+        "question": "Routingni amalga oshirishning qanday usullari mavjud?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5053",
+        "question": "Qanday loyiha tuzilmalari bilan tanishsiz?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5054",
+        "question": "TypeScript'da qanday paradigmalardan foydalanish mumkin?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "5055",
+        "question": "TypeScript'dagi funksional dasturlash boshqa tillardagi boshqa yondashuvlardan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "5056",
+        "question": "Boshqa tillarda ishlatgan patternlaringizni TypeScript'dagi patternlar bilan taqqoslang.",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "5057",
+        "question": "Tiplar va interfeyslar yordamida kod yozish qanday oqibatlarga olib kelishi mumkin?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "5058",
+        "question": "Run-time'da klasslarni dinamik ravishda qanday yaratishimiz mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5059",
+        "question": "Funksiyada yaratib, tashqariga qaytaradigan klassni TypeScript'da qanday tasvirlash mumkin?",
+        "chance": "3",
+        "tag": "TypeScript"
+    },
+    {
+        "id": "5061",
+        "question": "Dasturlashda ishlatgan loyihalash patternlaringiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5062",
+        "question": "MobX haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5063",
+        "question": "MobX'ni boshqa state boshqaruv tizimlari bilan taqqoslang.",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5064",
+        "question": "Qayerda funksiyalar sof (pure) bo'la olmaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5065",
+        "question": "Dastlabki ishlab chiqishdan ko'ra qo'llab-quvvatlash osonroq bo'lgan ilovani yozish uchun qanday yondashuvlardan foydalanasiz?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "5066",
+        "question": "JS'da interfeyslarni nima bilan almashtirish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5067",
+        "question": "Kontraktlarni nima bilan tasvirlash mumkin?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5070",
+        "question": "Node.js loyihalari uchun arxitektura yechimlariga misol keltiring, qanday tajriba va natija bo'lgan?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5071",
+        "question": "Yuqori yuklamali tizimlar va real vaqt tizimlari haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5072",
+        "question": "Real vaqtga yaqin tizimlar bilan ishlab chiqarishdagi real vaqt tizimlari o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5073",
+        "question": "Tillar ulanishi bilan bog'liq qanday muammolarga duch kelgansiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5074",
+        "question": "Amaliy koddan ma'lumotlar bazasiga kirishning yoki yondashuvlarning qanday turlari mavjud (masalan, Active Record)?",
+        "chance": "3",
+        "tag": "Ma'lumotlar bazasi"
+    },
+    {
+        "id": "5075",
+        "question": "JS, Node.js'da ishlatiladigan modullik tizimlari va ularning sharhi bilan kamchiliklari haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5076",
+        "question": "CommonJS'ning o'ziga xosliklari nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5077",
+        "question": "ECMAScript modullari va CommonJS modullaridan tashqari qanday modullik tizimlari mavjud?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5078",
+        "question": "Node.js'dagi mexanizmlar: domain va async hooks haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5079",
+        "question": "Graceful shutdown haqida va u qayerda qo'llanilishi haqida gapirib bering.",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5080",
+        "question": "Loyihangiz tizimining umumiy arxitekturasi qanday edi?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5081",
+        "question": "Loyihangiz jarayoni qanday tashkil etilgan edi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5082",
+        "question": "Qanday qiziqarli narsalarni ishlab chiqqaningiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5083",
+        "question": "Asinxron JS bilan qanday ishlaysiz?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "5084",
+        "question": "Ilovalarni nima yordamida build qilasiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "5085",
+        "question": "Ilovalarni qanday deploy qilasiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "5086",
+        "question": "JS xatolarini qanday monitoring qilasiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "5087",
+        "question": "HTTP protokoli haqida imkon qadar kengroq gapirib bering.",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "5088",
+        "question": "HTTP protokolida qanday aloqa metodlari mavjud?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "5089",
+        "question": "CRUD nima?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "5090",
+        "question": "CRUD qanday amalga oshiriladi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "5091",
+        "question": "Serverdan qanday javob kodlari bo'ladi?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "5092",
+        "question": "400 va 500 kodlarining farqi nimada?",
+        "chance": "3",
+        "tag": "HTTP / API"
+    },
+    {
+        "id": "5093",
+        "question": "HTML razmetkasidagi doctype atributi nima?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5094",
+        "question": "script tegining rejimlari (async, defer yoki type='module') ishlashidagi farq nimada?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5095",
+        "question": "link tegi nima uchun ishlatiladi?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5096",
+        "question": "link tegining rel atributi nima uchun kerak?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5097",
+        "question": "Strelkali funksiya orqali this'ni chaqirsak nima bo'ladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5098",
+        "question": "Shartlarda strelkali funksiya nima uchun kerak?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5099",
+        "question": "Asinxron chaqiruvlarni yozish uchun ishlatgan vositalaringizni ayting.",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "5100",
+        "question": "Brauzer dvijogida nimalarni tahlil qilgansiz?",
+        "chance": "3",
+        "tag": "WEB"
+    },
+    {
+        "id": "5101",
+        "question": "async va await o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "5102",
+        "question": "async va await funksiyalari nima uchun yaratilgan?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "5103",
+        "question": "JS'dagi data binding'ning afzalliklari va kamchiliklari nimada?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5104",
+        "question": "Avtomobil turargohi uchun Vue.js'da ilovani qanday loyihalashtirgan bo'lar edingiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5105",
+        "question": "async/await'ning promise'dan farqi nimada?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "5106",
+        "question": "Reference ma'lumot turi nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5107",
+        "question": "JS'da massivlar va obyektlar qanday taqqoslanadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5108",
+        "question": "Type coercion nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5110",
+        "question": "Havola orqali uzatish (pass by reference) deganda nimani tushunasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5111",
+        "question": "call, apply, bind metodlariga ikkinchi argument sifatida nima uzatiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5112",
+        "question": "Boxing nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5113",
+        "question": "Nima uchun primitiv stringga murojaat qilganda, unga obyekt kabi ham murojaat qilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5114",
+        "question": "toString qanday amalga oshiriladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5115",
+        "question": "Kontekstni o'zgartirishni qanday taqiqlash mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5116",
+        "question": "Promise'lar qaysi kategoriyaga kiradi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5117",
+        "question": "created'ning mounted'dan farqi nimada?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5118",
+        "question": "created'ning beforeCreate'dan farqi nimada?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5119",
+        "question": "box-sizing: border-box'ning box-sizing: content-box'dan farqi nimada?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5120",
+        "question": "HTML'da qanday shablonlardan (templates) foydalangansiz?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "5122",
+        "question": "Stillarni qanday reset qilasiz?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5123",
+        "question": "Router'ni ulash uchun qanday hook'lar qo'shiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5125",
+        "question": "import va export qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5126",
+        "question": "Qanday iteratsiya metodlarini bilasiz?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5128",
+        "question": "Yuqori tartibli funksiya (higher-order function) nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5130",
+        "question": "Backend bo'yicha global xatoliklarni qanday tutasiz (intercept)?",
+        "chance": "3",
+        "tag": "Backend"
+    },
+    {
+        "id": "5132",
+        "question": "Havolali funksiya oddiydan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5133",
+        "question": "Joriy loyihalaringiz haqida batafsilroq gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5134",
+        "question": "Front-end sohasida qancha vaqtdan beri ishlaysiz?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5135",
+        "question": "O'zingizning box-sizing'ingiz haqida gapirib bering.",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "5137",
+        "question": "Strelkali funksiyalar (bind metodini ishlatmaslik uchun) oddiy funksiyalardan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5138",
+        "question": "Obyektni qanday usullar bilan klonlash (nusxalash) mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5139",
+        "question": "Vue'da sahifani qanday yozasiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5140",
+        "question": "Vue komponenti qanday bo'limlardan (sections) iborat?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5142",
+        "question": "Nima uchun data xususiyati funksiya ichida bo'lishi kerak?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5143",
+        "question": "Qaysi Vue kutubxonalari bilan ishlagansiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5144",
+        "question": "Vuex.js nimalardan iborat?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5145",
+        "question": "Vuex.js bilan qanday o'zaro aloqa qilish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5146",
+        "question": "Flux'ning asosiy konsepsiyasi nimadan iborat?",
+        "chance": "3",
+        "tag": "Arxitektura"
+    },
+    {
+        "id": "5147",
+        "question": "Vuex.js qanday konsepsiyani amalga oshiradi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "5148",
+        "question": "Hozir nima bilan shug'ullanayotganingizni gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5149",
+        "question": "Alohida vazifalar bilan shug'ullanish, masalan, alohida kod yozish sizga yoqadimi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "5150",
+        "question": "Ma'lumot turlari bir-biridan nima bilan farq qiladi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5151",
+        "question": "Havola orqali va qiymat orqali uzatish qanday ishlaydi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "5152",
+        "question": "Obyekt havola orqali uzatiladi degani nimani anglatadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1954",
+        "question": "Kod staylingizni (code style) qanday nazorat qilasiz?",
+        "chance": "3",
+        "tag": "Best Practices"
+    },
+    {
+        "id": "4976",
+        "question": "O'zgaruvchi nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1898",
+        "question": "Pipe nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1900",
+        "question": "Pipe'ning qanday muhim xususiyati bor?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1902",
+        "question": "Javascript'dagi qaysi ma'lumotlar strukturasiga Observable yaqin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1904",
+        "question": "Subject, BehaviorSubject, ReplaySubject'larning farqlari?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1906",
+        "question": "Nima uchun massivlar obyekt hisoblanadi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1908",
+        "question": "for ishlatilganda qayerdan boshlash va qayerda tugatishni qanday bilish mumkin?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1910",
+        "question": "Strelkali funksiyaga bind qo'llash mumkinmi?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1912",
+        "question": "Qaysi hollarda lokal holat (state), qaysi hollarda global state ishlatish mumkin?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1914",
+        "question": "Vue'da nima yoqadi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1916",
+        "question": "Junior, middle va senior o'rtasidagi farq nimada?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1918",
+        "question": "Promise'ning eng muhim ajralib turadigan xususiyati nima?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1920",
+        "question": "async/await yoki .then ishlatasizmi?",
+        "chance": "3",
+        "tag": "Asinxronlik"
+    },
+    {
+        "id": "1922",
+        "question": "Nima uchun NaN JavaScript'da sondir?",
+        "chance": "3",
+        "tag": "Javascript"
+    },
+    {
+        "id": "1924",
+        "question": "role atributi nima uchun qo'shilgan?",
+        "chance": "3",
+        "tag": "HTML"
+    },
+    {
+        "id": "1926",
+        "question": "Frontend bilan bog'liq oxirgi o'qigan maqolangiz yoki kitobingiz qaysi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1928",
+        "question": "Binar kodning murakkabligiga qanday baho berish mumkin?",
+        "chance": "3",
+        "tag": "Algorithms"
+    },
+    {
+        "id": "1930",
+        "question": "CSS haqida bilib olgan oxirgi qiziqarli narsa haqida gapirib bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1931",
+        "question": "Vazifa ustida jamoada ishlashning ideal jarayoni qanday ko'rinishini tasvirlab bering.",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1932",
+        "question": "Vue'da slotlar nima uchun, nima maqsadda kerak va qanday ishlatiladi?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1934",
+        "question": "Agar Vue loyihasi IE11'da ishlamasa nima qilasiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1936",
+        "question": "Position'ning qanday variantlari bor?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1938",
+        "question": "Verstka qilishni yoqtirasizmi?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1940",
+        "question": "Qachon flexbox va grid ishlatish kerak?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1942",
+        "question": "Agar relative elementga top: 5px bersak nima bo'ladi?",
+        "chance": "3",
+        "tag": "CSS"
+    },
+    {
+        "id": "1946",
+        "question": "Optimizatsiya haqida nimalarni bilasiz?",
+        "chance": "3",
+        "tag": "Performance"
+    },
+    {
+        "id": "1948",
+        "question": "Virtual DOM'ga qanday munosabatdasiz?",
+        "chance": "3",
+        "tag": "Frontend"
+    },
+    {
+        "id": "1952",
+        "question": "Versiyalash (versioning) haqida nima deya olasiz?",
+        "chance": "3",
+        "tag": "Tools"
+    },
+    {
+        "id": "1955",
+        "question": "Agar dasturlash bo'lmasa, unda nima?",
+        "chance": "3",
+        "tag": "HR"
+    },
+    {
+        "id": "1957",
+        "question": "IT sohasidagi 3 ta qiziqarli shaxsni ayting.",
+        "chance": "3",
+        "tag": "HR"
+    }
+]
