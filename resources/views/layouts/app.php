@@ -6,25 +6,22 @@
     <title><?= APP_NAME ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="<?= asset('css/app.css') ?>">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2989575196315667"
-            crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-2989575196315667">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
          style="position: fixed; top: 0; width: 100%; z-index: 100;">
         <div class="container">
-            <a class="navbar-brand" href="<?= APP_URL ?>"><?= APP_NAME ?></a>
+            <a class="navbar-brand" href="home.php"><?= APP_NAME ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="<?= APP_URL ?>">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= APP_URL ?>/mock">Mock</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= APP_URL ?>/requirements">Requirements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mock.php">Mock</a></li>
+                    <li class="nav-item"><a class="nav-link" href="requirements.php">Requirements</a></li>
                 </ul>
                 <div class="d-flex">
                     <a href="https://www.buymeacoffee.com/umarov" target="_blank" class="btn btn-warning btn-sm">
@@ -41,6 +38,7 @@
         <?php echo $content; ?>
     </div>
 </div>
+
 
 <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
     <div id="infoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">

@@ -3,7 +3,7 @@
 <div class="card-grid">
     <?php foreach ($professions as $profession): ?>
         <?php if ($profession->questions_count > 0): ?>
-            <a href="<?= APP_URL . '/professions/' . $profession->slug ?>" class="item-card">
+            <a href="profession.php?slug=<?= urlencode($profession->slug) ?>" class="item-card">
                 <h4><?= htmlspecialchars($profession->name) ?></h4>
             </a>
         <?php else: ?>
