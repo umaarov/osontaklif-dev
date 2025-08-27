@@ -1,7 +1,7 @@
 {
   "short_name": "OsonTaklif",
   "name": "OsonTaklif - IT sohasida ish topishni osonlashtiradigan vositalar to'plami",
-  "description": "Prepare for your tech interview with a curated list of questions and required skills for top professions.",
+  "description": "O'zbekistondagi eng talabgir IT kasblari bo'yicha suhbat savollari, kompaniya talablari va amaliy mock intervyular bazasi.",
   "icons": [
     {
       "src": "/img/icons/icon-192x192.png",
