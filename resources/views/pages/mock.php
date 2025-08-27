@@ -1,8 +1,7 @@
 <h3 class="page-title"><?= __('mock_title') ?></h3>
-
 <div class="content-container">
     <div class="main-content">
-        <form method="GET" action="<?= APP_URL ?>/mock" class="filter-container">
+        <form method="GET" action="mock.php" class="filter-container">
             <select name="position" class="filter-select">
                 <option value="">---------</option>
                 <?php foreach ($positions as $position): ?>
@@ -19,9 +18,7 @@
                 <label><input type="radio" name="grade"
                               value="Senior" <?= ($_GET['grade'] ?? '') == 'Senior' ? 'checked' : '' ?>> Senior</label>
             </div>
-            <button type="submit" class="btn-primary">
-                <?= __('mock_select_btn') ?>
-            </button>
+            <button type="submit" class="btn-primary"><?= __('mock_select_btn') ?></button>
         </form>
 
         <table class="data-table">
@@ -38,11 +35,11 @@
                 <tr>
                     <td><?= ($page - 1) * 100 + $i + 1 ?></td>
                     <td>
-                        <a href="<?= htmlspecialchars($interview->link) ?>" class="table-link"
-                           target="_blank"><?= htmlspecialchars($interview->title) ?></a>
+                        <a href="<?= htmlspecialchars($interview['link']) ?>" class="table-link"
+                           target="_blank"><?= htmlspecialchars($interview['title']) ?></a>
                     </td>
-                    <td><?= htmlspecialchars($interview->profession_name) ?></td>
-                    <td><?= htmlspecialchars($interview->grade) ?></td>
+                    <td><?= htmlspecialchars($interview['profession_name']) ?></td>
+                    <td><?= htmlspecialchars($interview['grade']) ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>

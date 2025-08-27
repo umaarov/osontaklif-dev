@@ -116,7 +116,8 @@ class PageController extends Controller
             }
         }
         $stmt->execute();
-        $interviews = $stmt->fetchAll(PDO::FETCH_CLASS, Interview::class);
+
+        $interviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         $this->view('pages.mock', compact('interviews', 'positions', 'page', 'totalPages'));
     }
@@ -135,23 +136,30 @@ class PageController extends Controller
             exit();
         }
 
+        $sort = $_GET['sort'] ?? 'desc';
+        $validatedSort = in_array($sort, ['asc', 'desc']) ? $sort : 'desc';
+
         $search = $_GET['search'] ?? null;
-        $sort = in_array($_GET['sort'] ?? 'desc', ['asc', 'desc']) ? $_GET['sort'] : 'desc';
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
         $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 50;
         $offset = ($page - 1) * $limit;
+
         $sql = "SELECT * FROM profession_skills WHERE profession_id = :id AND skill_name != '_total_processed'";
         $params = [':id' => $profession->id];
+
         if ($search) {
             $sql .= " AND skill_name LIKE :search";
             $params[':search'] = "%$search%";
         }
+
         $totalSkillsStmt = Profession::db()->prepare(str_replace('*', 'COUNT(*)', $sql));
         $totalSkillsStmt->execute($params);
         $totalSkills = $totalSkillsStmt->fetchColumn();
-        $sql .= " ORDER BY count $sort LIMIT :limit OFFSET :offset";
+
+        $sql .= " ORDER BY count $validatedSort LIMIT :limit OFFSET :offset";
         $params[':limit'] = $limit;
         $params[':offset'] = $offset;
+
         $stmt = Profession::db()->prepare($sql);
         foreach ($params as $key => &$val) {
             if (is_int($val)) {
@@ -162,6 +170,7 @@ class PageController extends Controller
         }
         $stmt->execute();
         $skills = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
         $metaRecordStmt = Profession::db()->prepare("SELECT * FROM profession_skills WHERE profession_id = :id AND skill_name = '_total_processed'");
         $metaRecordStmt->execute([':id' => $profession->id]);
         $metaRecord = $metaRecordStmt->fetch();
@@ -169,7 +178,7 @@ class PageController extends Controller
         $lastUpdated = $metaRecord ? $metaRecord['last_updated'] : $profession->updated_at;
         $hasMoreSkills = $totalSkills > ($offset + $limit);
         $validatedSearch = $search;
-        $validatedSort = $sort;
+
         $this->view('pages.requirement_show', compact(
             'profession', 'skills', 'lastUpdated', 'validatedSort', 'validatedSearch',
             'totalProcessed', 'page', 'limit', 'totalSkills', 'hasMoreSkills'

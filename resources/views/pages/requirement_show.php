@@ -42,7 +42,7 @@
 
         <?php if ($hasMoreSkills): ?>
             <div class="load-more-container">
-                <a href="requirements.php?name=<?= urlencode($profession->slug) ?>&page=<?= ($page + 1) ?>"
+                <a href="requirements.php?name=<?= urlencode($profession->slug) ?>&page=<?= ($page + 1) ?>&sort=<?= $validatedSort ?>&search=<?= urlencode($validatedSearch) ?>"
                    class="load-more-text" id="load-more-btn">
                     <?= __('load_more') ?>
                 </a>
@@ -55,6 +55,7 @@
     </div>
     <?php include BASE_PATH . '/resources/views/partials/ad.php'; ?>
 </div>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
