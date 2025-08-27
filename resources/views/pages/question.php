@@ -2,14 +2,14 @@
 <div class="content-container">
     <div class="main-content">
         <div class="content-box main-content">
-            <?= $question->content ?>
-            <?php if($question->created_at): ?>
+            <?= purify($question->content) ?>
+            <?php if ($question->created_at): ?>
                 <p class="timestamp"><?= date('Y-m-d H:i', strtotime($question->created_at)) ?></p>
             <?php endif; ?>
         </div>
         <div style="margin-top: 20px;">
             <a href="profession.php?name=<?= urlencode($profession->slug) ?>" class="btn-outline">
-                <?=__('back_to_questions')?>
+                <?= __('back_to_questions') ?>
             </a>
         </div>
     </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Interview;
 use App\Models\Profession;
 use App\Models\Question;
+use Core\Cache;
 use Core\Controller;
 use PDO;
 
@@ -12,13 +13,23 @@ class PageController extends Controller
 {
     public function home()
     {
-        $professions = Profession::query("
+        $cache = new Cache();
+        $cacheKey = 'professions_home_page';
+
+        $professions = $cache->get($cacheKey);
+
+        if ($professions === null) {
+            $professions = Profession::query("
             SELECT p.*, COUNT(q.id) as questions_count
             FROM professions p
             LEFT JOIN questions q ON p.id = q.profession_id
             WHERE p.is_active = 1
             GROUP BY p.id
         ");
+
+            $cache->set($cacheKey, $professions, 3600);
+        }
+
         $this->view('pages.home', compact('professions'));
     }
 

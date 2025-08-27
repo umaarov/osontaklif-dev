@@ -5,6 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 require_once __DIR__ . '/app.php';
 require_once __DIR__ . '/database.php';
+require_once BASE_PATH . '/Core/helpers.php';
 
 $envFile = BASE_PATH . '/.env';
 if (file_exists($envFile)) {

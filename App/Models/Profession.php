@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Core\Model;
+use InvalidArgumentException;
 
 class Profession extends Model
 {
@@ -10,7 +11,13 @@ class Profession extends Model
 
     public static function findOneBy($column, $value)
     {
-        $stmt = self::db()->prepare("SELECT * FROM " . static::$table . " WHERE {$column} = ? LIMIT 1");
+        $allowedColumns = ['id', 'slug', 'name', 'is_active'];
+
+        if (!in_array($column, $allowedColumns)) {
+            throw new InvalidArgumentException("Invalid column name provided: {$column}");
+        }
+
+        $stmt = self::db()->prepare("SELECT * FROM " . static::$table . " WHERE `{$column}` = ? LIMIT 1");
         $stmt->execute([$value]);
         $data = $stmt->fetch();
         return $data ? new static($data) : null;
