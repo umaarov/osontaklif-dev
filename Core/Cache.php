@@ -2,54 +2,83 @@
 
 namespace Core;
 
-use RuntimeException;
+use Closure;
+use Memcached;
 
 class Cache
 {
-    private string $cacheDir = BASE_PATH . '/storage/cache';
+    private static ?Memcached $memcached = null;
 
     public function __construct()
     {
-        if (!is_dir($this->cacheDir)) {
-            if (!mkdir($this->cacheDir, 0755, true) && !is_dir($this->cacheDir)) {
-                throw new RuntimeException("Failed to create cache directory: {$this->cacheDir}");
-            }
-        }
     }
 
+    private function connection(): ?Memcached
+    {
+        if (!class_exists('\Memcached')) {
+            return null;
+        }
+
+        if (self::$memcached === null) {
+            self::$memcached = new Memcached();
+            if (!self::$memcached->addServer('127.0.0.1', 11211)) {
+                return null;
+            }
+        }
+        return self::$memcached;
+    }
 
     public function get(string $key)
     {
-        $file = $this->getFilePath($key);
-        if (!file_exists($file)) {
+        if (!$conn = $this->connection()) {
             return null;
         }
 
-        $data = unserialize(file_get_contents($file));
-        if (time() > $data['expires']) {
-            unlink($file);
-            return null;
-        }
+        $value = $conn->get($this->formatKey($key));
 
-        return $data['value'];
+        return $value === false ? null : $value;
     }
 
     public function set(string $key, $value, int $ttl = 3600): void
     {
-        $filePath = $this->getFilePath($key);
-        $data = [
-            'expires' => time() + $ttl,
-            'value' => $value,
-        ];
-
-        if (file_put_contents($filePath, serialize($data)) === false) {
-            throw new RuntimeException("Failed to write cache file: {$filePath}");
+        if ($conn = $this->connection()) {
+            $conn->set($this->formatKey($key), $value, $ttl);
         }
     }
 
-
-    private function getFilePath(string $key): string
+    public function remember(string $key, int $ttl, Closure $callback)
     {
-        return $this->cacheDir . '/' . sha1($key) . '.cache';
+        $value = $this->get($key);
+
+        if ($value !== null) {
+            return $value;
+        }
+
+        $value = $callback();
+
+        $this->set($key, $value, $ttl);
+
+        return $value;
+    }
+
+    public function delete(string $key): bool
+    {
+        if ($conn = $this->connection()) {
+            return $conn->delete($this->formatKey($key));
+        }
+        return false;
+    }
+
+    public function flush(): bool
+    {
+        if ($conn = $this->connection()) {
+            return $conn->flush();
+        }
+        return false;
+    }
+
+    private function formatKey(string $key): string
+    {
+        return 'osontaklif:' . md5($key);
     }
 }

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/bootstrap.php';
+require_once __DIR__ . '/../config/bootstrap_secure.php';
 
 $id = $_GET['id'] ?? null;
 $professionId = $_GET['pid'] ?? null;
