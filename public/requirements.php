@@ -1,11 +1,11 @@
 <?php
 require_once __DIR__ . '/../config/bootstrap.php';
 
-$id = $_GET['id'] ?? null;
+$name = $_GET['name'] ?? null;
 
 $controller = new App\Http\Controllers\PageController();
-if ($id) {
-    $controller->requirement_show($id);
+if ($name) {
+    $controller->requirement_show($name);
 } else {
     $controller->requirements();
 }

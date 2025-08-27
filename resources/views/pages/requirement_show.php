@@ -13,56 +13,46 @@
 
 <div class="content-container">
     <div class="main-content">
-        <?php if (empty($skills) && $page == 1): ?>
-            <div class="alert alert-warning">
-                <?= __('requirement_show_no_skills_data') ?>
-            </div>
-        <?php else: ?>
-            <form method="GET" class="search-form">
-                <input type="text" name="search" value="<?= htmlspecialchars($validatedSearch ?? '') ?>"
-                       placeholder="<?= __('requirement_show_search_placeholder') ?>" class="search-input">
-                <input type="hidden" name="page" value="1">
-                <button type="submit" class="btn-outline" style="margin-left: 6px;">
-                    <?= __('requirement_show_search_btn') ?>
-                </button>
-            </form>
+        <form method="GET" class="search-form" action="requirements.php">
+            <input type="hidden" name="name" value="<?= htmlspecialchars($profession->slug) ?>">
+            <input type="text" name="search" value="<?= htmlspecialchars($validatedSearch ?? '') ?>"
+                   placeholder="<?= __('requirement_show_search_placeholder') ?>" class="search-input">
+            <button type="submit" class="btn-outline"
+                    style="margin-left: 6px;"><?= __('requirement_show_search_btn') ?></button>
+        </form>
 
-            <table class="data-table" id="skills-table">
-                <thead>
+        <table class="data-table" id="skills-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th><?= __('requirement_show_table_title_1') ?></th>
+                <th><?= __('requirement_show_table_title_2') ?></th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($skills as $index => $skill): ?>
                 <tr>
-                    <th>#</th>
-                    <th><?= __('requirement_show_table_title_1') ?></th>
-                    <th><?= __('requirement_show_table_title_2') ?></th>
+                    <td><?= ($page - 1) * $limit + $index + 1 ?></td>
+                    <td><?= htmlspecialchars($skill['skill_name']) ?></td>
+                    <td><?= htmlspecialchars($skill['count']) ?></td>
                 </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($skills as $index => $skill): ?>
-                    <tr>
-                        <td><?= ($page - 1) * $limit + $index + 1 ?></td>
-                        <td><?= htmlspecialchars($skill['skill_name']) ?></td>
-                        <td><?= htmlspecialchars($skill['count']) ?></td>
-                    </tr>
-                <?php endforeach; ?>
-                </tbody>
-            </table>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
 
-            <?php if ($hasMoreSkills): ?>
-                <div class="load-more-container">
-                    <a href="<?= APP_URL . '/requirements/' . $name . '?search=' . urlencode($validatedSearch) . '&sort=' . $validatedSort . '&page=' . ($page + 1) . '&limit=' . $limit ?>"
-                       class="load-more-text" id="load-more-btn">
-                        <?= __('load_more') ?>
-                    </a>
-                </div>
-            <?php endif; ?>
+        <?php if ($hasMoreSkills): ?>
+            <div class="load-more-container">
+                <a href="requirements.php?name=<?= urlencode($profession->slug) ?>&page=<?= ($page + 1) ?>"
+                   class="load-more-text" id="load-more-btn">
+                    <?= __('load_more') ?>
+                </a>
+            </div>
         <?php endif; ?>
 
         <div style="margin-top: 20px;">
-            <a href="<?= APP_URL ?>/requirements" class="btn-outline">
-                <?= __('back_to_requirements') ?>
-            </a>
+            <a href="requirements.php" class="btn-outline"><?= __('back_to_requirements') ?></a>
         </div>
     </div>
-
     <?php include BASE_PATH . '/resources/views/partials/ad.php'; ?>
 </div>
 

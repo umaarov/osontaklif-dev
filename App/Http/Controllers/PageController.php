@@ -22,9 +22,9 @@ class PageController extends Controller
         $this->view('pages.home', compact('professions'));
     }
 
-    public function profession($id)
+    public function profession($name)
     {
-        $profession = Profession::find($id);
+        $profession = Profession::findOneBy('slug', $name);
         if (!$profession) {
             header("Location: home.php");
             exit();
@@ -65,6 +65,7 @@ class PageController extends Controller
 
         $this->view('pages.profession', compact('profession', 'questions', 'search', 'sort', 'page', 'totalPages', 'total'));
     }
+
 
     public function question($id, $professionId = null)
     {
@@ -126,15 +127,14 @@ class PageController extends Controller
         $this->view('pages.requirements', compact('professions'));
     }
 
-    public function requirement_show($id)
+    public function requirement_show($name)
     {
-        $profession = Profession::find($id);
+        $profession = Profession::findOneBy('slug', $name);
         if (!$profession) {
             header("Location: requirements.php");
             exit();
         }
 
-        $name = $profession->name;
         $search = $_GET['search'] ?? null;
         $sort = in_array($_GET['sort'] ?? 'desc', ['asc', 'desc']) ? $_GET['sort'] : 'desc';
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -172,7 +172,7 @@ class PageController extends Controller
         $validatedSort = $sort;
         $this->view('pages.requirement_show', compact(
             'profession', 'skills', 'lastUpdated', 'validatedSort', 'validatedSearch',
-            'totalProcessed', 'page', 'limit', 'totalSkills', 'hasMoreSkills', 'name'
+            'totalProcessed', 'page', 'limit', 'totalSkills', 'hasMoreSkills'
         ));
     }
 

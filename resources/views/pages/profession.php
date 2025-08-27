@@ -3,8 +3,7 @@
 <div class="content-container">
     <div class="main-content">
         <form method="GET" class="search-form" action="profession.php">
-            <!-- Hidden input to keep track of the profession ID -->
-            <input type="hidden" name="id" value="<?= htmlspecialchars($profession->id) ?>">
+            <input type="hidden" name="name" value="<?= htmlspecialchars($profession->slug) ?>">
             <input type="text" name="search" value="<?= htmlspecialchars($search) ?>"
                    placeholder="<?= __('profession_search_placeholder') ?>" class="search-input">
             <button type="submit" class="btn-outline"
@@ -24,7 +23,6 @@
                 <tr>
                     <td><?= ($page - 1) * 100 + $i + 1 ?></td>
                     <td>
-                        <!-- **FIX:** Using the clean '?id=' and '?pid=' URL format -->
                         <a href="question.php?id=<?= $q['id'] ?>&pid=<?= $profession->id ?>" class="table-link">
                             <?= htmlspecialchars($q['question']) ?>
                         </a>
@@ -35,6 +33,20 @@
             <?php endforeach; ?>
             </tbody>
         </table>
+
+        <div class="pagination-container">
+            <?php if ($totalPages > 1): ?>
+                <div class="simple-pagination">
+                    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                        <a href="profession.php?name=<?= urlencode($profession->slug) ?>&page=<?= $i ?>&search=<?= urlencode($search) ?>"
+                           class="page-button <?= $page == $i ? 'active' : '' ?>">
+                            <?= $i ?>
+                        </a>
+                    <?php endfor; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+
         <div style="margin-top: 20px;">
             <a href="home.php" class="btn-outline"><?= __('back_to_home') ?></a>
         </div>
