@@ -1,40 +1,43 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-require __DIR__ . '/../vendor/autoload.php';
-
-use Dotenv\Dotenv;
-
-$dotenv = Dotenv::createImmutable(dirname(__DIR__));
-
-$dotenv->load();
-
-define('DB_HOST', $_ENV['DB_HOST']);
-define('DB_PORT', $_ENV['DB_PORT']);
-define('DB_DATABASE', $_ENV['DB_DATABASE']);
-define('DB_USERNAME', $_ENV['DB_USERNAME']);
-define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
+define('DB_HOST', getenv('DB_HOST'));
+define('DB_PORT', getenv('DB_PORT'));
+define('DB_DATABASE', getenv('DB_DATABASE'));
+define('DB_USERNAME', getenv('DB_USERNAME'));
+define('DB_PASSWORD', getenv('DB_PASSWORD'));
 
 class Database
 {
-    private static $instance = null;
-    private $conn;
+    private static ?PDO $conn = null;
+    private static ?Database $instance = null;
 
     private function __construct()
     {
-        $dsn = 'mysql:host=' . DB_HOST . ';port=' . DB_PORT . ';dbname=' . DB_DATABASE . ';charset=utf8mb4';
+        if (!defined('DB_HOST')) define('DB_HOST', getenv('DB_HOST'));
+        if (!defined('DB_PORT')) define('DB_PORT', getenv('DB_PORT'));
+        if (!defined('DB_DATABASE')) define('DB_DATABASE', getenv('DB_DATABASE'));
+        if (!defined('DB_USERNAME')) define('DB_USERNAME', getenv('DB_USERNAME'));
+        if (!defined('DB_PASSWORD')) define('DB_PASSWORD', getenv('DB_PASSWORD'));
+
+        $dbSocket = getenv('DB_SOCKET');
+
+        if ($dbSocket) {
+            $dsn = 'mysql:unix_socket=' . $dbSocket . ';dbname=' . DB_DATABASE . ';charset=utf8mb4';
+        } else {
+            $dsn = 'mysql:host=' . DB_HOST . ';port=' . DB_PORT . ';dbname=' . DB_DATABASE . ';charset=utf8mb4';
+        }
+
         try {
-            $this->conn = new PDO($dsn, DB_USERNAME, DB_PASSWORD);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            self::$conn = new PDO($dsn, DB_USERNAME, DB_PASSWORD, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                PDO::ATTR_EMULATE_PREPARES => false,
+            ]);
         } catch (PDOException $e) {
             die("Connection failed: " . $e->getMessage());
         }
     }
 
-    public static function getInstance()
+    public static function getInstance(): Database
     {
         if (self::$instance === null) {
             self::$instance = new self();
@@ -42,9 +45,9 @@ class Database
         return self::$instance;
     }
 
-    public function getConnection()
+    public function getConnection(): PDO
     {
-        return $this->conn;
+        return self::$conn;
     }
 
     private function __clone()

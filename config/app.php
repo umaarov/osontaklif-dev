@@ -1,7 +1,6 @@
 <?php
-define('BASE_PATH', dirname(__DIR__));
-const APP_URL = 'http://localhost/osontaklif/public';
-const APP_NAME = 'OsonTaklif';
+
+define('APP_NAME', getenv('APP_NAME') ?: 'OsonTaklif');
 const APP_LOCALE = 'uz';
 
 spl_autoload_register(function ($class) {
@@ -19,7 +18,7 @@ function asset($path)
 function route($name, $params = [])
 {
     global $routes;
-    $url = isset($routes[$name]) ? $routes[$name] : '/';
+    $url = $routes[$name] ?? '/';
     foreach ($params as $key => $value) {
         $url = str_replace('{' . $key . '}', $value, $url);
     }
@@ -36,5 +35,5 @@ if (file_exists($lang_file)) {
 function __($key)
 {
     global $translations;
-    return isset($translations[$key]) ? $translations[$key] : $key;
+    return $translations[$key] ?? $key;
 }
