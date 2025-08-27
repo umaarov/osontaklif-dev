@@ -1,3 +1,25 @@
+<?php
+$questionData = [
+    "@context" => "https://schema.org",
+    "@type" => "QAPage",
+    "mainEntity" => [
+        "@type" => "Question",
+        "name" => $question->question,
+        "text" => strip_tags($question->content),
+        "answerCount" => 1,
+        "acceptedAnswer" => [
+            "@type" => "Answer",
+            "text" => strip_tags($question->content),
+            "dateCreated" => date('c', strtotime($question->created_at)),
+            "upvoteCount" => $question->chance
+        ]
+    ]
+];
+?>
+<script type="application/ld+json">
+<?= json_encode($questionData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+
+</script>
 <h3 class="page-title"><?= htmlspecialchars($question->question) ?></h3>
 <div class="content-container">
     <div class="main-content">

@@ -6,6 +6,9 @@ abstract class Controller
 {
     protected function view($view, $data = [])
     {
+        $data['metaTitle'] = $data['metaTitle'] ?? APP_NAME;
+        $data['metaDescription'] = $data['metaDescription'] ?? 'Find interview questions and career requirements.';
+        $data['canonicalUrl'] = $data['canonicalUrl'] ?? APP_URL;
         $viewFile = BASE_PATH . '/resources/views/' . str_replace('.', '/', $view) . '.php';
 
         if (file_exists($viewFile)) {

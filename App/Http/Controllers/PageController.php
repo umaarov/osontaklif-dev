@@ -31,11 +31,16 @@ class PageController extends Controller
 
     public function profession($name)
     {
+
         $profession = Profession::findOneBy('slug', $name);
         if (!$profession) {
             header("Location: home.php");
             exit();
         }
+
+        $metaTitle = "{$profession->name} Interview Questions - " . APP_NAME;
+        $metaDescription = "Top interview questions for the {$profession->name} role. Prepare for your tech interview with our curated list.";
+        $canonicalUrl = APP_URL . "/profession.php?name=" . urlencode($profession->slug);
 
         $search = $_GET['search'] ?? '';
         $sort = $_GET['sort'] ?? 'desc';
@@ -70,7 +75,12 @@ class PageController extends Controller
 
         $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        $this->view('pages.profession', compact('profession', 'questions', 'search', 'sort', 'page', 'totalPages', 'total'));
+        $this->view('pages.profession', compact(
+                'profession',
+                'questions', 'search', 'sort', 'page', 'totalPages', 'total'
+                , 'metaTitle', 'metaDescription', 'canonicalUrl'
+            )
+        );
     }
 
 
