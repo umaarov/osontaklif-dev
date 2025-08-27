@@ -229,40 +229,37 @@ class PageController extends Controller
         ini_set('max_execution_time', 300);
 
         $db = Database::getInstance()->getConnection();
-        $baseUrl = APP_URL;
+        $baseUrl = rtrim(APP_URL, '/');
 
         header('Content-Type: application/xml; charset=utf-8');
 
         echo '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
         echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
 
-        function createSitemapUrlEntry($loc, $lastmod, $priority = '0.80')
-        {
+        $createUrlEntry = function ($path, $lastmod, $priority = '0.80') use ($baseUrl) {
+            $loc = $baseUrl . '/' . ltrim($path, '/');
             $lastmodDate = date('Y-m-d', strtotime($lastmod));
             echo '  <url>' . PHP_EOL;
             echo '    <loc>' . htmlspecialchars($loc) . '</loc>' . PHP_EOL;
             echo '    <lastmod>' . $lastmodDate . '</lastmod>' . PHP_EOL;
             echo '    <priority>' . $priority . '</priority>' . PHP_EOL;
             echo '  </url>' . PHP_EOL;
-        }
+        };
 
         $today = date('Y-m-d H:i:s');
-        createSitemapUrlEntry($baseUrl . '/', $today, '1.00');
-        createSitemapUrlEntry($baseUrl . '/mock.php', $today, '0.90');
-        createSitemapUrlEntry($baseUrl . '/requirements.php', $today, '0.90');
-        createSitemapUrlEntry($baseUrl . '/about.php', $today, '0.70');
-        createSitemapUrlEntry($baseUrl . '/terms.php', $today, '0.50');
-        createSitemapUrlEntry($baseUrl . '/sponsorship.php', $today, '0.50');
-        createSitemapUrlEntry($baseUrl . '/ads.php', $today, '0.50');
+        $createUrlEntry('/', $today, '1.00');
+        $createUrlEntry('/mock.php', $today, '0.90');
+        $createUrlEntry('/requirements.php', $today, '0.90');
+        $createUrlEntry('/about.php', $today, '0.70');
+        $createUrlEntry('/terms.php', $today, '0.50');
+        $createUrlEntry('/sponsorship.php', $today, '0.50');
+        $createUrlEntry('/ads.php', $today, '0.50');
 
         $professionsStmt = $db->prepare("SELECT slug, updated_at FROM professions WHERE is_active = 1");
         $professionsStmt->execute();
         while ($row = $professionsStmt->fetch(PDO::FETCH_ASSOC)) {
-            $professionUrl = $baseUrl . '/profession.php?name=' . $row['slug'];
-            createSitemapUrlEntry($professionUrl, $row['updated_at'], '0.90');
-
-            $requirementUrl = $baseUrl . '/requirements.php?name=' . $row['slug'];
-            createSitemapUrlEntry($requirementUrl, $row['updated_at'], '0.90');
+            $createUrlEntry('/profession.php?name=' . $row['slug'], $row['updated_at'], '0.90');
+            $createUrlEntry('/requirements.php?name=' . $row['slug'], $row['updated_at'], '0.90');
         }
 
         $questionsStmt = $db->prepare(
@@ -273,12 +270,10 @@ class PageController extends Controller
         );
         $questionsStmt->execute();
         while ($row = $questionsStmt->fetch(PDO::FETCH_ASSOC)) {
-            $url = $baseUrl . '/question.php?id=' . $row['id'] . '&pid=' . $row['profession_slug'];
-            createSitemapUrlEntry($url, $row['updated_at'], '0.80');
+            $createUrlEntry('/question.php?id=' . $row['id'] . '&pid=' . $row['profession_slug'], $row['updated_at'], '0.80');
         }
 
         echo '</urlset>';
-
         exit;
     }
 }
