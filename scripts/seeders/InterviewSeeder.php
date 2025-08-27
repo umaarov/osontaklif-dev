@@ -1,5 +1,4 @@
 <?php
-// scripts/seeders/InterviewSeeder.php
 
 class InterviewSeeder {
     private $db;
@@ -8,7 +7,6 @@ class InterviewSeeder {
     }
 
     public function run() {
-        // IMPORTANT: Create a 'database/data' directory and place your 'interviews.json' inside it.
         $jsonPath = BASE_PATH . '/database/data/interviews.json';
         if (!file_exists($jsonPath)) {
             echo "Error: interviews.json not found in 'database/data'.\n";
