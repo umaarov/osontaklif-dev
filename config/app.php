@@ -1,6 +1,6 @@
 <?php
 define('BASE_PATH', dirname(__DIR__));
-const APP_URL = 'https://osontaklif.uz';
+const APP_URL = 'http://localhost/osontaklif/public';
 const APP_NAME = 'OsonTaklif';
 const APP_LOCALE = 'uz';
 

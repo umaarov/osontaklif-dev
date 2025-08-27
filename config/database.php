@@ -1,11 +1,21 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+require __DIR__ . '/../vendor/autoload.php';
 
-define('DB_HOST', getenv('DB_HOST'));
-define('DB_PORT', getenv('DB_PORT'));
-define('DB_DATABASE', getenv('DB_DATABASE'));
-define('DB_USERNAME', getenv('DB_USERNAME'));
-define('DB_PASSWORD', getenv('DB_PASSWORD'));
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+
+$dotenv->load();
+
+define('DB_HOST', $_ENV['DB_HOST']);
+define('DB_PORT', $_ENV['DB_PORT']);
+define('DB_DATABASE', $_ENV['DB_DATABASE']);
+define('DB_USERNAME', $_ENV['DB_USERNAME']);
+define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 
 class Database
 {
