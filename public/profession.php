@@ -1,12 +1,12 @@
 <?php
 require_once __DIR__ . '/../config/bootstrap.php';
 
-$slug = $_GET['slug'] ?? null;
+$id = $_GET['id'] ?? null;
 
-if (!$slug) {
+if (!$id) {
     header("Location: home.php");
     exit();
 }
 
 $controller = new App\Http\Controllers\PageController();
-$controller->profession($slug);
+$controller->profession($id);

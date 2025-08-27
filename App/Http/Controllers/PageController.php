@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Core\Controller;
+use App\Models\Interview;
 use App\Models\Profession;
 use App\Models\Question;
-use App\Models\Interview;
+use Core\Controller;
+use PDO;
 
 class PageController extends Controller
 {
@@ -21,16 +22,16 @@ class PageController extends Controller
         $this->view('pages.home', compact('professions'));
     }
 
-    public function profession($slug)
+    public function profession($id)
     {
-        $profession = Profession::findOneBy('slug', $slug);
+        $profession = Profession::find($id);
         if (!$profession) {
-            header("Location: " . APP_URL);
+            header("Location: home.php");
             exit();
         }
 
-        $search = isset($_GET['search']) ? $_GET['search'] : '';
-        $sort = isset($_GET['sort']) ? $_GET['sort'] : 'desc';
+        $search = $_GET['search'] ?? '';
+        $sort = $_GET['sort'] ?? 'desc';
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
         $perPage = 100;
         $offset = ($page - 1) * $perPage;
@@ -55,25 +56,22 @@ class PageController extends Controller
         $params[':offset'] = $offset;
 
         $stmt = Profession::db()->prepare($sql);
-        foreach($params as $key => &$val) {
-            if(is_int($val)){
-                $stmt->bindParam($key, $val, \PDO::PARAM_INT);
-            } else {
-                $stmt->bindParam($key, $val, \PDO::PARAM_STR);
-            }
+        foreach ($params as $key => &$val) {
+            $stmt->bindParam($key, $val, is_int($val) ? PDO::PARAM_INT : PDO::PARAM_STR);
         }
         $stmt->execute();
-        $questions = $stmt->fetchAll(\PDO::FETCH_CLASS, Question::class);
+
+        $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         $this->view('pages.profession', compact('profession', 'questions', 'search', 'sort', 'page', 'totalPages', 'total'));
     }
 
-    public function question($id, $professionSlug = null)
+    public function question($id, $professionId = null)
     {
         $question = Question::find($id);
         $profession = null;
-        if ($professionSlug) {
-            $profession = Profession::findOneBy('slug', $professionSlug);
+        if ($professionId) {
+            $profession = Profession::find($professionId);
         }
         $this->view('pages.question', compact('question', 'profession'));
     }
@@ -109,15 +107,15 @@ class PageController extends Controller
         $params[':offset'] = $offset;
 
         $stmt = Interview::db()->prepare($sql);
-        foreach($params as $key => &$val) {
-            if(is_int($val)){
-                $stmt->bindParam($key, $val, \PDO::PARAM_INT);
+        foreach ($params as $key => &$val) {
+            if (is_int($val)) {
+                $stmt->bindParam($key, $val, PDO::PARAM_INT);
             } else {
-                $stmt->bindParam($key, $val, \PDO::PARAM_STR);
+                $stmt->bindParam($key, $val, PDO::PARAM_STR);
             }
         }
         $stmt->execute();
-        $interviews = $stmt->fetchAll(\PDO::FETCH_CLASS, Interview::class);
+        $interviews = $stmt->fetchAll(PDO::FETCH_CLASS, Interview::class);
 
         $this->view('pages.mock', compact('interviews', 'positions', 'page', 'totalPages'));
     }
@@ -128,60 +126,50 @@ class PageController extends Controller
         $this->view('pages.requirements', compact('professions'));
     }
 
-    public function requirement_show($slug)
+    public function requirement_show($id)
     {
-        $profession = Profession::findOneBy('slug', $slug);
+        $profession = Profession::find($id);
         if (!$profession) {
-            header("Location: " . APP_URL . "/requirements.php");
+            header("Location: requirements.php");
             exit();
         }
 
         $name = $profession->name;
-
-        $search = isset($_GET['search']) ? $_GET['search'] : null;
-        $sort = in_array(isset($_GET['sort']) ? $_GET['sort'] : 'desc', ['asc', 'desc']) ? $_GET['sort'] : 'desc';
+        $search = $_GET['search'] ?? null;
+        $sort = in_array($_GET['sort'] ?? 'desc', ['asc', 'desc']) ? $_GET['sort'] : 'desc';
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
         $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 50;
         $offset = ($page - 1) * $limit;
-
         $sql = "SELECT * FROM profession_skills WHERE profession_id = :id AND skill_name != '_total_processed'";
         $params = [':id' => $profession->id];
-
         if ($search) {
             $sql .= " AND skill_name LIKE :search";
             $params[':search'] = "%$search%";
         }
-
         $totalSkillsStmt = Profession::db()->prepare(str_replace('*', 'COUNT(*)', $sql));
         $totalSkillsStmt->execute($params);
         $totalSkills = $totalSkillsStmt->fetchColumn();
-
         $sql .= " ORDER BY count $sort LIMIT :limit OFFSET :offset";
         $params[':limit'] = $limit;
         $params[':offset'] = $offset;
-
         $stmt = Profession::db()->prepare($sql);
-        foreach($params as $key => &$val) {
-            if(is_int($val)){
-                $stmt->bindParam($key, $val, \PDO::PARAM_INT);
+        foreach ($params as $key => &$val) {
+            if (is_int($val)) {
+                $stmt->bindParam($key, $val, PDO::PARAM_INT);
             } else {
-                $stmt->bindParam($key, $val, \PDO::PARAM_STR);
+                $stmt->bindParam($key, $val, PDO::PARAM_STR);
             }
         }
         $stmt->execute();
-        $skills = $stmt->fetchAll();
-
+        $skills = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $metaRecordStmt = Profession::db()->prepare("SELECT * FROM profession_skills WHERE profession_id = :id AND skill_name = '_total_processed'");
         $metaRecordStmt->execute([':id' => $profession->id]);
         $metaRecord = $metaRecordStmt->fetch();
         $totalProcessed = $metaRecord ? $metaRecord['count'] : 0;
         $lastUpdated = $metaRecord ? $metaRecord['last_updated'] : $profession->updated_at;
-
         $hasMoreSkills = $totalSkills > ($offset + $limit);
-
         $validatedSearch = $search;
         $validatedSort = $sort;
-
         $this->view('pages.requirement_show', compact(
             'profession', 'skills', 'lastUpdated', 'validatedSort', 'validatedSearch',
             'totalProcessed', 'page', 'limit', 'totalSkills', 'hasMoreSkills', 'name'
