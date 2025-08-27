@@ -229,13 +229,8 @@ class PageController extends Controller
         ini_set('max_execution_time', 300);
 
         $db = Database::getInstance()->getConnection();
-        $baseUrl = rtrim(getenv('APP_URL'), '/');
 
-        if (empty($baseUrl)) {
-            header("HTTP/1.1 500 Internal Server Error");
-            error_log("Sitemap generation failed: APP_URL is empty or not set.");
-            exit;
-        }
+        $baseUrl = 'https://osontaklif.uz';
 
         header('Content-Type: application/xml; charset=utf-8');
 
@@ -254,18 +249,18 @@ class PageController extends Controller
 
         $today = date('Y-m-d H:i:s');
         $createUrlEntry('/', $today, '1.00');
-        $createUrlEntry('/mock.php', $today, '0.90');
-        $createUrlEntry('/requirements.php', $today, '0.90');
-        $createUrlEntry('/about.php', $today, '0.70');
-        $createUrlEntry('/terms.php', '0.50');
-        $createUrlEntry('/sponsorship.php', $today, '0.50');
-        $createUrlEntry('/ads.php', $today, '0.50');
+        $createUrlEntry('mock.php', $today, '0.90');
+        $createUrlEntry('requirements.php', $today, '0.90');
+        $createUrlEntry('about.php', $today, '0.70');
+        $createUrlEntry('terms.php', $today, '0.50');
+        $createUrlEntry('sponsorship.php', $today, '0.50');
+        $createUrlEntry('ads.php', $today, '0.50');
 
         $professionsStmt = $db->prepare("SELECT slug, updated_at FROM professions WHERE is_active = 1");
         $professionsStmt->execute();
         while ($row = $professionsStmt->fetch(PDO::FETCH_ASSOC)) {
-            $createUrlEntry('/profession.php?name=' . $row['slug'], $row['updated_at'], '0.90');
-            $createUrlEntry('/requirements.php?name=' . $row['slug'], $row['updated_at'], '0.90');
+            $createUrlEntry('profession.php?name=' . $row['slug'], $row['updated_at'], '0.90');
+            $createUrlEntry('requirements.php?name=' . $row['slug'], $row['updated_at'], '0.90');
         }
 
         $questionsStmt = $db->prepare(
@@ -276,7 +271,7 @@ class PageController extends Controller
         );
         $questionsStmt->execute();
         while ($row = $questionsStmt->fetch(PDO::FETCH_ASSOC)) {
-            $createUrlEntry('/question.php?id=' . $row['id'] . '&pid=' . $row['profession_slug'], $row['updated_at'], '0.80');
+            $createUrlEntry('question.php?id=' . $row['id'] . '&pid=' . $row['profession_slug'], $row['updated_at'], '0.80');
         }
 
         echo '</urlset>';
