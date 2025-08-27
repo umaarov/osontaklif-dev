@@ -7,6 +7,7 @@ use App\Models\Profession;
 use App\Models\Question;
 use Core\Cache;
 use Core\Controller;
+use Database;
 use PDO;
 
 class PageController extends Controller
@@ -224,6 +225,60 @@ class PageController extends Controller
 
     public function sitemap()
     {
-        require_once BASE_PATH . '/public/sitemap.php';
+        ini_set('memory_limit', '256M');
+        ini_set('max_execution_time', 300);
+
+        $db = Database::getInstance()->getConnection();
+        $baseUrl = APP_URL;
+
+        header('Content-Type: application/xml; charset=utf-8');
+
+        echo '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
+        echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
+
+        function createSitemapUrlEntry($loc, $lastmod, $priority = '0.80')
+        {
+            $lastmodDate = date('Y-m-d', strtotime($lastmod));
+            echo '  <url>' . PHP_EOL;
+            echo '    <loc>' . htmlspecialchars($loc) . '</loc>' . PHP_EOL;
+            echo '    <lastmod>' . $lastmodDate . '</lastmod>' . PHP_EOL;
+            echo '    <priority>' . $priority . '</priority>' . PHP_EOL;
+            echo '  </url>' . PHP_EOL;
+        }
+
+        $today = date('Y-m-d H:i:s');
+        createSitemapUrlEntry($baseUrl . '/', $today, '1.00');
+        createSitemapUrlEntry($baseUrl . '/mock.php', $today, '0.90');
+        createSitemapUrlEntry($baseUrl . '/requirements.php', $today, '0.90');
+        createSitemapUrlEntry($baseUrl . '/about.php', $today, '0.70');
+        createSitemapUrlEntry($baseUrl . '/terms.php', $today, '0.50');
+        createSitemapUrlEntry($baseUrl . '/sponsorship.php', $today, '0.50');
+        createSitemapUrlEntry($baseUrl . '/ads.php', $today, '0.50');
+
+        $professionsStmt = $db->prepare("SELECT slug, updated_at FROM professions WHERE is_active = 1");
+        $professionsStmt->execute();
+        while ($row = $professionsStmt->fetch(PDO::FETCH_ASSOC)) {
+            $professionUrl = $baseUrl . '/profession.php?name=' . $row['slug'];
+            createSitemapUrlEntry($professionUrl, $row['updated_at'], '0.90');
+
+            $requirementUrl = $baseUrl . '/requirements.php?name=' . $row['slug'];
+            createSitemapUrlEntry($requirementUrl, $row['updated_at'], '0.90');
+        }
+
+        $questionsStmt = $db->prepare(
+            "SELECT q.id, q.updated_at, p.slug as profession_slug
+         FROM questions q
+         JOIN professions p ON q.profession_id = p.id
+         WHERE p.is_active = 1"
+        );
+        $questionsStmt->execute();
+        while ($row = $questionsStmt->fetch(PDO::FETCH_ASSOC)) {
+            $url = $baseUrl . '/question.php?id=' . $row['id'] . '&pid=' . $row['profession_slug'];
+            createSitemapUrlEntry($url, $row['updated_at'], '0.80');
+        }
+
+        echo '</urlset>';
+
+        exit;
     }
 }
