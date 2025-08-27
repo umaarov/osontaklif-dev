@@ -221,4 +221,9 @@ class PageController extends Controller
     {
         $this->view('pages.ads');
     }
+
+    public function sitemap()
+    {
+        require_once BASE_PATH . '/public/sitemap.php';
+    }
 }

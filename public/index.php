@@ -15,6 +15,7 @@ if (empty($route)) {
 }
 
 $routes = [
+    'sitemap.xml' => 'PageController@sitemap',
     'home' => 'PageController@home',
     'professions/{slug}' => 'PageController@profession',
     'questions/{id}/{professionSlug}' => 'PageController@question',

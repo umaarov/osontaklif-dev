@@ -1,0 +1,24 @@
+{
+  "short_name": "OsonTaklif",
+  "name": "OsonTaklif - IT sohasida ish topishni osonlashtiradigan vositalar to'plami",
+  "description": "Prepare for your tech interview with a curated list of questions and required skills for top professions.",
+  "icons": [
+    {
+      "src": "/img/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#212529"
+}
