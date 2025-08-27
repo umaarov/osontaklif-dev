@@ -1,7 +1,8 @@
 <div class="ad-container">
     <h3 class="ad-title"><?=__('sponsored')?></h3>
     <hr class="ad-separator">
-    <img src="images/ad-banner.jpg" alt="Ad Image" class="ad-image" onerror="this.style.display='none'">
+    <img src="https://placehold.co/360x640" alt="Ad Image" class="ad-image">
+
     <div class="side-footer">
         <div class="footer-links">
             <a href="about.php"><?=__('about_us_nav')?></a>
