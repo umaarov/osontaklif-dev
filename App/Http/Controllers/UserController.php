@@ -32,4 +32,43 @@ class UserController extends Controller
             'activities'
         ));
     }
+
+    public function edit()
+    {
+        $userId = $_SESSION['user_id'];
+        $user = User::find($userId);
+        $profile = UserProfile::findBy('user_id', $userId);
+
+        if (!$profile) {
+            $profile = new UserProfile(['user_id' => $userId]);
+        }
+
+        $this->view('users.edit', compact('user', 'profile'));
+    }
+
+    public function update()
+    {
+        $userId = $_SESSION['user_id'];
+        $user = User::find($userId);
+        $user->update(['first_name' => $_POST['first_name'] ?? $user->first_name]);
+
+        $profile = UserProfile::findBy('user_id', $userId);
+        $profileData = [
+            'surname' => $_POST['surname'] ?? null,
+            'headline' => $_POST['headline'] ?? null,
+            'position' => $_POST['position'] ?? null,
+            'company' => $_POST['company'] ?? null,
+            'bio' => $_POST['bio'] ?? null
+        ];
+
+        if ($profile) {
+            $profile->update($profileData);
+        } else {
+            UserProfile::create(array_merge(['user_id' => $userId], $profileData));
+        }
+
+        $_SESSION['success'] = 'Profile updated successfully!';
+        header("Location: profile.php?id=" . $userId);
+        exit();
+    }
 }

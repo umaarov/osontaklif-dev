@@ -15,6 +15,13 @@ function format_date_range($startDate, $endDate) {
                 <h5 class="my-3"><?= htmlspecialchars($user->first_name . ' ' . ($profile ? $profile->surname : '')) ?></h5>
                 <p class="text-muted mb-1"><?= htmlspecialchars($profile ? $profile->headline : 'No headline') ?></p>
                 <p class="text-muted mb-4"><?= htmlspecialchars($profile ? $profile->position : 'No position') ?> at <?= htmlspecialchars($profile ? $profile->company : 'No company') ?></p>
+
+                <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $user->id): ?>
+                    <div class="d-flex justify-content-center mb-2">
+                        <a href="profile_edit.php" class="btn btn-primary">Edit Profile</a>
+                    </div>
+                <?php endif; ?>
+            </div>
             </div>
         </div>
     </div>

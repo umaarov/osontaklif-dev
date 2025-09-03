@@ -16,4 +16,29 @@ class UserProfile extends Model
         $data = $stmt->fetch(PDO::FETCH_ASSOC);
         return $data ? new static($data) : null;
     }
+
+    public static function create(array $data)
+    {
+        $columns = implode(', ', array_keys($data));
+        $placeholders = ':' . implode(', :', array_keys($data));
+
+        $sql = "INSERT INTO " . static::$table . " ({$columns}) VALUES ({$placeholders})";
+        $stmt = self::db()->prepare($sql);
+        $stmt->execute($data);
+    }
+
+    public function update(array $data)
+    {
+        $setClauses = [];
+        foreach ($data as $key => $value) {
+            $setClauses[] = "`{$key}` = :{$key}";
+        }
+        $setClause = implode(', ', $setClauses);
+
+        $sql = "UPDATE " . static::$table . " SET {$setClause} WHERE user_id = :user_id";
+        $stmt = self::db()->prepare($sql);
+
+        $data['user_id'] = $this->user_id;
+        $stmt->execute($data);
+    }
 }

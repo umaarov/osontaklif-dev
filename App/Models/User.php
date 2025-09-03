@@ -37,4 +37,14 @@ class User extends Model
     {
         return password_verify($password, $this->password);
     }
+
+    public function update(array $data)
+    {
+        $sql = "UPDATE " . static::$table . " SET first_name = :first_name, updated_at = NOW() WHERE id = :id";
+        $stmt = self::db()->prepare($sql);
+        $stmt->execute([
+            ':first_name' => $data['first_name'],
+            ':id' => $this->id
+        ]);
+    }
 }
