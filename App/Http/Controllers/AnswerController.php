@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Answer;
@@ -7,17 +6,19 @@ use Core\Controller;
 
 class AnswerController extends Controller
 {
-    public function store($questionId)
+    public function store()
     {
+        $questionId = $_POST['question_id'] ?? null;
+        $professionId = $_POST['profession_id'] ?? null;
+
         if (!isset($_SESSION['user_id'])) {
-            header('Location: /login');
+            header('Location: login.php');
             exit();
         }
 
         $content = $_POST['content'] ?? '';
-        if (empty(trim($content))) {
-            $_SESSION['error'] = 'Answer content cannot be empty.';
-            header('Location: /questions/' . $questionId);
+        if (empty(trim($content)) || !$questionId || !$professionId) {
+            $_SESSION['error'] = 'An error occurred. Please try again.';
             exit();
         }
 
@@ -30,7 +31,8 @@ class AnswerController extends Controller
         ]);
 
         $_SESSION['success'] = 'Your answer has been posted!';
-        header('Location: /questions/' . $questionId);
+        // Redirect back to the correct question page with query parameters
+        header('Location: question.php?id=' . $questionId . '&pid=' . $professionId); // FIXED
         exit();
     }
 }
