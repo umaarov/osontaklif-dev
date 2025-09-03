@@ -21,7 +21,7 @@ class AuthController extends Controller
 
         if (!$user || !$user->verifyPassword($password)) {
             $_SESSION['error'] = 'Invalid email or password.';
-            header('Location: /login');
+            header('Location: /login.php');
             exit();
         }
 
@@ -29,7 +29,7 @@ class AuthController extends Controller
         $_SESSION['user_name'] = $user->first_name;
         $_SESSION['success'] = 'Successfully logged in!';
 
-        header('Location: /');
+        header('Location: /home.php');
         exit();
     }
 
@@ -47,19 +47,19 @@ class AuthController extends Controller
 
         if (empty($firstName) || empty($email) || empty($password)) {
             $_SESSION['error'] = 'Please fill in all fields.';
-            header('Location: /register');
+            header('Location: /register.php');
             exit();
         }
 
         if ($password !== $passwordConfirm) {
             $_SESSION['error'] = 'Passwords do not match.';
-            header('Location: /register');
+            header('Location: /register.php');
             exit();
         }
 
         if (User::findByEmail($email)) {
             $_SESSION['error'] = 'An account with this email already exists.';
-            header('Location: /register');
+            header('Location: /register.php');
             exit();
         }
 
@@ -69,7 +69,7 @@ class AuthController extends Controller
         $_SESSION['user_name'] = $user->first_name;
         $_SESSION['success'] = 'Registration successful!';
 
-        header('Location: /');
+        header('Location: /home.php');
         exit();
     }
 
@@ -77,7 +77,7 @@ class AuthController extends Controller
     {
         session_unset();
         session_destroy();
-        header('Location: /');
+        header('Location: /home.php');
         exit();
     }
 }

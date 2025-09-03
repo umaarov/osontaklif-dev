@@ -22,20 +22,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mock.php">Mock</a></li>
-                    <li class="nav-item"><a class="nav-link" href="requirements.php">Requirements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mock.php">Mock</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/requirements.php">Requirements</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
                     <?php if (isset($_SESSION['user_id'])): ?>
                         <span class="navbar-text me-3">
                             Welcome, <?= htmlspecialchars($_SESSION['user_name']) ?>!
                         </span>
-                        <a href="/profile" class="btn btn-outline-light btn-sm me-2">Profile</a>
-                        <a href="/logout" class="btn btn-secondary btn-sm">Logout</a>
+                        <a href="/profile.php" class="btn btn-outline-light btn-sm me-2">Profile</a>
+                        <a href="/logout.php" class="btn btn-secondary btn-sm">Logout</a>
                     <?php else: ?>
-                        <a href="/login" class="btn btn-outline-light btn-sm me-2">Login</a>
-                        <a href="/register" class="btn btn-primary btn-sm">Sign Up</a>
+                        <a href="/login.php" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="/register.php" class="btn btn-primary btn-sm">Sign Up</a>
                     <?php endif; ?>
                 </div>
             </div>

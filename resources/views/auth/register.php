@@ -3,7 +3,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <form action="/register-post" method="POST">
+                <form action="/register.php" method="POST">
                     <div class="mb-3">
                         <label for="first_name" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="first_name" name="first_name" required>
@@ -18,11 +18,12 @@
                     </div>
                     <div class="mb-3">
                         <label for="password_confirmation" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
+                        <input type="password" class="form-control" id="password_confirmation"
+                               name="password_confirmation" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Register</button>
                 </form>
-                <p class="mt-3">Already have an account? <a href="/login">Login here</a>.</p>
+                <p class="mt-3">Already have an account? <a href="/login.php">Login here</a>.</p>
             </div>
         </div>
     </div>

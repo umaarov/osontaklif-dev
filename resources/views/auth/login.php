@@ -3,7 +3,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <form action="/login-post" method="POST">
+                <form action="/login.php" method="POST">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" name="email" required>
@@ -14,7 +14,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
-                <p class="mt-3">Don't have an account? <a href="/register">Register here</a>.</p>
+                <p class="mt-3">Don't have an account? <a href="/register.php">Register here</a>.</p>
             </div>
         </div>
     </div>

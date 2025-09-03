@@ -1,28 +1,33 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require_once __DIR__ . '/../config/bootstrap_secure.php';
 
 $routes = [
     'GET' => [
         'sitemap.xml' => 'PageController@sitemap',
         '/' => 'PageController@home',
-        'login' => 'AuthController@showLoginForm',
-        'register' => 'AuthController@showRegisterForm',
-        'logout' => 'AuthController@logout',
-        'home' => 'PageController@home',
+        'index.php' => 'PageController@home',
+        'home.php' => 'PageController@home',
+        'login.php' => 'AuthController@showLoginForm',
+        'register.php' => 'AuthController@showRegisterForm',
+        'logout.php' => 'AuthController@logout',
         'professions/{slug}' => 'PageController@profession',
         'questions/{id}/{professionSlug}' => 'PageController@question',
-        'mock' => 'PageController@mock',
-        'requirements' => 'PageController@requirements',
+        'mock.php' => 'PageController@mock',
+        'requirements.php' => 'PageController@requirements',
         'requirements/{slug}' => 'PageController@requirement_show',
-        'about' => 'PageController@about',
-        'terms' => 'PageController@terms',
-        'sponsorship' => 'PageController@sponsorship',
-        'ads' => 'PageController@ads',
+        'about.php' => 'PageController@about',
+        'terms.php' => 'PageController@terms',
+        'sponsorship.php' => 'PageController@sponsorship',
+        'ads.php' => 'PageController@ads',
     ],
     'POST' => [
-        'login' => 'AuthController@login',
-        'register' => 'AuthController@register',
+        'login.php' => 'AuthController@login',
+        'register.php' => 'AuthController@register',
         'questions/{id}/answer' => 'AnswerController@store',
     ]
 ];
@@ -58,7 +63,6 @@ if (isset($routes[$request_method])) {
         }
     }
 }
-
 
 if ($controllerName && $methodName) {
     $controllerClass = 'App\\Http\\Controllers\\' . $controllerName;
