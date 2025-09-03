@@ -1,23 +1,20 @@
 <?php
-function format_date_range($startDate, $endDate)
-{
+function format_date_range($startDate, $endDate) {
     $start = date('M Y', strtotime($startDate));
     $end = $endDate ? date('M Y', strtotime($endDate)) : 'Present';
     return "{$start} - {$end}";
 }
-
 ?>
 
 <div class="row">
     <div class="col-lg-4">
         <div class="card mb-4">
             <div class="card-body text-center">
-                <img src="<?= htmlspecialchars($profile->avatar_url ?? 'https://placehold.co/150') ?>" alt="avatar"
+                <img src="<?= htmlspecialchars($profile ? $profile->avatar_url : 'https://placehold.co/150') ?>" alt="avatar"
                      class="rounded-circle img-fluid" style="width: 150px;">
-                <h5 class="my-3"><?= htmlspecialchars($user->first_name . ' ' . ($profile->surname ?? '')) ?></h5>
-                <p class="text-muted mb-1"><?= htmlspecialchars($profile->headline ?? 'No headline') ?></p>
-                <p class="text-muted mb-4"><?= htmlspecialchars($profile->position ?? 'No position') ?>
-                    at <?= htmlspecialchars($profile->company ?? 'No company') ?></p>
+                <h5 class="my-3"><?= htmlspecialchars($user->first_name . ' ' . ($profile ? $profile->surname : '')) ?></h5>
+                <p class="text-muted mb-1"><?= htmlspecialchars($profile ? $profile->headline : 'No headline') ?></p>
+                <p class="text-muted mb-4"><?= htmlspecialchars($profile ? $profile->position : 'No position') ?> at <?= htmlspecialchars($profile ? $profile->company : 'No company') ?></p>
             </div>
         </div>
     </div>
@@ -26,7 +23,7 @@ function format_date_range($startDate, $endDate)
         <div class="card mb-4">
             <div class="card-header"><h4>About</h4></div>
             <div class="card-body">
-                <p><?= nl2br(htmlspecialchars($profile->bio ?? 'This user has not written a bio yet.')) ?></p>
+                <p><?= nl2br(htmlspecialchars($profile ? $profile->bio : 'This user has not written a bio yet.')) ?></p>
             </div>
         </div>
 
@@ -44,8 +41,7 @@ function format_date_range($startDate, $endDate)
                             <small class="text-muted"><?= format_date_range($exp->start_date, $exp->end_date) ?></small>
                             <p><?= nl2br(htmlspecialchars($exp->description ?? '')) ?></p>
                         </div>
-                        <?php if ($index < $experienceCount - 1): ?>
-                            <hr><?php endif; ?>
+                        <?php if ($index < $experienceCount - 1): ?><hr><?php endif; ?>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
@@ -61,12 +57,10 @@ function format_date_range($startDate, $endDate)
                     foreach ($educations as $index => $edu): ?>
                         <div class="mb-3">
                             <h5 class="mb-0"><?= htmlspecialchars($edu->institution_name) ?></h5>
-                            <div class="text-muted"><?= htmlspecialchars($edu->degree) ?>
-                                , <?= htmlspecialchars($edu->field_of_study) ?></div>
+                            <div class="text-muted"><?= htmlspecialchars($edu->degree) ?>, <?= htmlspecialchars($edu->field_of_study) ?></div>
                             <small class="text-muted"><?= format_date_range($edu->start_date, $edu->end_date) ?></small>
                         </div>
-                        <?php if ($index < $educationCount - 1): ?>
-                            <hr><?php endif; ?>
+                        <?php if ($index < $educationCount - 1): ?><hr><?php endif; ?>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
