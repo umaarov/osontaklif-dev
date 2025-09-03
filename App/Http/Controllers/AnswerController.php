@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\Answer;
@@ -31,8 +32,7 @@ class AnswerController extends Controller
         ]);
 
         $_SESSION['success'] = 'Your answer has been posted!';
-        // Redirect back to the correct question page with query parameters
-        header('Location: question.php?id=' . $questionId . '&pid=' . $professionId); // FIXED
+        header('Location: question.php?id=' . $questionId . '&pid=' . $professionId);
         exit();
     }
 }

@@ -33,23 +33,43 @@ $questionData = [
 ?>
 <script type="application/ld+json">
     <?= json_encode($questionData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
-
-
 </script>
 
 <h3 class="page-title"><?= htmlspecialchars($question->question) ?></h3>
 <div class="content-container">
     <div class="main-content">
-        <div class="content-box">
-            <?= purify($question->content) ?>
-            <?php if ($question->created_at): ?>
-                <p class="timestamp">Published on: <?= date('Y-m-d H:i', strtotime($question->created_at)) ?></p>
+<!--        <div class="content-box">-->
+<!--            --><?php //= purify($question->content) ?>
+<!--            --><?php //if ($question->created_at): ?>
+<!--                <p class="timestamp">Published on: --><?php //= date('Y-m-d H:i', strtotime($question->created_at)) ?><!--</p>-->
+<!--            --><?php //endif; ?>
+<!--        </div>-->
+
+<!--        <hr class="my-4">-->
+
+<!--        <h4 class="mb-3">Community Answers (--><?php //= count($answers) ?><!--)</h4>-->
+
+        <div class="answers-section mb-4">
+            <?php if (empty($answers)): ?>
+                <div class="card card-body text-center">
+                    <p class="mb-0">No community answers yet. Be the first to share your knowledge!</p>
+                </div>
+            <?php else: ?>
+                <?php foreach ($answers as $answer): ?>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="answer-content">
+                                <?= purify($parsedown->text($answer->content)) ?>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted small">
+                            Answered by <?= htmlspecialchars($answer->first_name) ?>
+                            on <?= date('M d, Y', strtotime($answer->created_at)) ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             <?php endif; ?>
         </div>
-
-        <hr class="my-4">
-
-        <h4 class="mb-3">Community Answers (<?= count($answers) ?>)</h4>
         <div class="answer-form-container mt-4">
             <?php if (isset($_SESSION['user_id'])): ?>
                 <div class="card">
