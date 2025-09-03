@@ -31,7 +31,7 @@
                         <span class="navbar-text me-3">
                             Welcome, <?= htmlspecialchars($_SESSION['user_name']) ?>!
                         </span>
-                        <a href="/profile.php" class="btn btn-outline-light btn-sm me-2">Profile</a>
+                        <a href="/profile.php?id=<?= $_SESSION['user_id'] ?>" class="btn btn-outline-light btn-sm me-2">Profile</a>
                         <a href="/logout.php" class="btn btn-secondary btn-sm">Logout</a>
                     <?php else: ?>
                         <a href="/login.php" class="btn btn-outline-light btn-sm me-2">Login</a>
