@@ -41,13 +41,26 @@ class AuthController extends Controller
         $username = $_POST['username'] ?? '';
         $email = $_POST['email'] ?? '';
         $password = $_POST['password'] ?? '';
+        $passwordConfirm = $_POST['password_confirmation'] ?? '';
+
+        if (empty($firstName) || empty($username) || empty($email) || empty($password)) {
+            $_SESSION['error'] = 'Please fill in all fields.';
+            header('Location: register.php');
+            exit();
+        }
+
+        if ($password !== $passwordConfirm) {
+            $_SESSION['error'] = 'Passwords do not match.';
+            header('Location: register.php');
+            exit();
+        }
 
         if (User::findBy('username', $username)) {
             $_SESSION['error'] = 'Username is already taken.';
             header('Location: register.php');
             exit();
         }
-        if (User::findByEmail($email)) {
+        if (User::findBy('email', $email)) {
             $_SESSION['error'] = 'Email is already in use.';
             header('Location: register.php');
             exit();
@@ -60,6 +73,7 @@ class AuthController extends Controller
             header('Location: home.php');
             exit();
         }
+
         $_SESSION['error'] = 'Could not create account.';
         header('Location: register.php');
         exit();

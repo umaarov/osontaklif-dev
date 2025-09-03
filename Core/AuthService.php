@@ -10,7 +10,7 @@ class AuthService
 
     public static function attempt(string $email, string $password, bool $remember = false): bool
     {
-        $user = User::findByEmail($email);
+        $user = User::findBy('email', $email);
 
         if (!$user || !$user->verifyPassword($password)) {
             return false;
