@@ -1,15 +1,20 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
+use Core\AuthService;
+
 require_once __DIR__ . '/../config/bootstrap_secure.php';
 
-$userId = $_GET['id'] ?? $_SESSION['user_id'] ?? null;
+$username = $_GET['user'] ?? null;
 
-if (!$userId) {
+if (!$username) {
+    $user = AuthService::user();
+    if ($user) {
+        header('Location: profile.php?user=' . $user->username);
+        exit();
+    }
     header("Location: login.php");
     exit();
 }
 
 $controller = new App\Http\Controllers\UserController();
-$controller->show($userId);
+$controller->show($username);

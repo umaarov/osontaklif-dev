@@ -2,73 +2,73 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Answer;
-use App\Models\Education;
-use App\Models\Experience;
 use App\Models\User;
 use App\Models\UserProfile;
+use Core\AuthService;
 use Core\Controller;
+use Core\UploaderService;
 
 class UserController extends Controller
 {
-    public function show($userId)
+    public function show($username)
     {
-        $user = User::find($userId);
+        $user = User::findBy('username', $username);
         if (!$user) {
-            header("Location: home.php");
-            exit();
+            http_response_code(404);
+            $this->view('errors.404');
+            return;
         }
 
-        $profile = UserProfile::findBy('user_id', $userId);
-        $experiences = Experience::findByUserId($userId);
-        $educations = Education::findByUserId($userId);
-        $activities = Answer::findRecentByUserId($userId);
-
-        $this->view('users.profile', compact(
-            'user',
-            'profile',
-            'experiences',
-            'educations',
-            'activities'
-        ));
+        $profile = UserProfile::findBy('user_id', $user->id);
+        $this->view('users.profile', compact('user', 'profile'));
     }
 
     public function edit()
     {
-        $userId = $_SESSION['user_id'];
-        $user = User::find($userId);
-        $profile = UserProfile::findBy('user_id', $userId);
-
-        if (!$profile) {
-            $profile = new UserProfile(['user_id' => $userId]);
+        $user = AuthService::user();
+        if (!$user) {
+            header("Location: login.php");
+            exit();
         }
 
+        $profile = UserProfile::findBy('user_id', $user->id);
         $this->view('users.edit', compact('user', 'profile'));
     }
 
     public function update()
     {
-        $userId = $_SESSION['user_id'];
-        $user = User::find($userId);
+        $user = AuthService::user();
+        if (!$user) {
+            exit('Unauthorized');
+        }
+
+        $avatarPath = null;
+        if (isset($_FILES['avatar']) && $_FILES['avatar']['error'] === UPLOAD_ERR_OK) {
+            $uploader = new UploaderService();
+            $avatarPath = $uploader->handle($_FILES['avatar']);
+        }
+
         $user->update(['first_name' => $_POST['first_name'] ?? $user->first_name]);
 
-        $profile = UserProfile::findBy('user_id', $userId);
         $profileData = [
             'surname' => $_POST['surname'] ?? null,
             'headline' => $_POST['headline'] ?? null,
-            'position' => $_POST['position'] ?? null,
-            'company' => $_POST['company'] ?? null,
             'bio' => $_POST['bio'] ?? null
         ];
 
+        if ($avatarPath) {
+            $profileData['avatar_url'] = $avatarPath;
+        }
+
+        $profile = UserProfile::findBy('user_id', $user->id);
         if ($profile) {
             $profile->update($profileData);
         } else {
-            UserProfile::create(array_merge(['user_id' => $userId], $profileData));
+            UserProfile::create(array_merge(['user_id' => $user->id], $profileData));
         }
 
         $_SESSION['success'] = 'Profile updated successfully!';
-        header("Location: profile.php?id=" . $userId);
+        header("Location: profile.php?user=" . $user->username);
         exit();
     }
 }

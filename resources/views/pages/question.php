@@ -33,42 +33,44 @@ $questionData = [
 ?>
 <script type="application/ld+json">
     <?= json_encode($questionData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+
 </script>
 
 <h3 class="page-title"><?= htmlspecialchars($question->question) ?></h3>
 <div class="content-container">
     <div class="main-content">
-<!--        <div class="content-box">-->
-<!--            --><?php //= purify($question->content) ?>
-<!--            --><?php //if ($question->created_at): ?>
-<!--                <p class="timestamp">Published on: --><?php //= date('Y-m-d H:i', strtotime($question->created_at)) ?><!--</p>-->
-<!--            --><?php //endif; ?>
-<!--        </div>-->
+        <!--        <div class="content-box">-->
+        <!--            --><?php //= purify($question->content) ?>
+        <!--            --><?php //if ($question->created_at): ?>
+        <!--                <p class="timestamp">Published on: -->
+        <?php //= date('Y-m-d H:i', strtotime($question->created_at)) ?><!--</p>-->
+        <!--            --><?php //endif; ?>
+        <!--        </div>-->
 
-<!--        <hr class="my-4">-->
+        <!--        <hr class="my-4">-->
 
-<!--        <h4 class="mb-3">Community Answers (--><?php //= count($answers) ?><!--)</h4>-->
+        <!--        <h4 class="mb-3">Community Answers (--><?php //= count($answers) ?><!--)</h4>-->
 
         <div class="answers-section mb-4">
-            <?php if (empty($answers)): ?>
-                <div class="card card-body text-center">
-                    <p class="mb-0">No community answers yet. Be the first to share your knowledge!</p>
-                </div>
-            <?php else: ?>
-                <?php foreach ($answers as $answer): ?>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="answer-content">
-                                <?= purify($parsedown->text($answer->content)) ?>
-                            </div>
+            <?php foreach ($answers as $answer): ?>
+                <div class="card mb-3">
+                    <div class="card-header d-flex align-items-center bg-transparent border-bottom-0">
+                        <a href="profile.php?user=<?= htmlspecialchars($answer->username) ?>">
+                            <img src="<?= htmlspecialchars($answer->avatar_url ?? '/uploads/avatars/default.png') ?>"
+                                 class="rounded-circle" width="32" height="32">
+                        </a>
+                        <div class="ms-2">
+                            <a href="profile.php?user=<?= htmlspecialchars($answer->username) ?>"
+                               class="fw-bold text-decoration-none"><?= htmlspecialchars($answer->first_name) ?></a>
+                            <span class="text-muted">@<?= htmlspecialchars($answer->username) ?></span>
                         </div>
-                        <div class="card-footer text-muted small">
-                            Answered by <?= htmlspecialchars($answer->first_name) ?>
-                            on <?= date('M d, Y', strtotime($answer->created_at)) ?>
-                        </div>
+                        <small class="text-muted ms-auto"><?= date('M d, Y', strtotime($answer->created_at)) ?></small>
                     </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
+                    <div class="card-body">
+                        <?= purify($parsedown->text($answer->content)) ?>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
         <div class="answer-form-container mt-4">
             <?php if (isset($_SESSION['user_id'])): ?>
@@ -80,7 +82,8 @@ $questionData = [
                             <input type="hidden" name="profession_id" value="<?= $profession->id ?>">
 
                             <div class="mb-3">
-                                <textarea name="content" class="form-control" rows="8" placeholder="Share your answer. Markdown is supported!" required></textarea>
+                                <textarea name="content" class="form-control" rows="8"
+                                          placeholder="Share your answer. Markdown is supported!" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">Submit Answer</button>
                         </form>
@@ -88,7 +91,9 @@ $questionData = [
                 </div>
             <?php else: ?>
                 <div class="alert alert-info text-center">
-                    Please <a href="login.php" class="alert-link">login</a> or <a href="register.php" class="alert-link">register</a> to post an answer.
+                    Please <a href="login.php" class="alert-link">login</a> or <a href="register.php"
+                                                                                  class="alert-link">register</a> to
+                    post an answer.
                 </div>
             <?php endif; ?>
         </div>

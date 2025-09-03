@@ -4,6 +4,13 @@
     <div class="card-body">
         <form action="profile_update.php" method="POST">
             <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="<?= htmlspecialchars($profile->avatar_url ?? '/uploads/avatars/default.png') ?>" class="rounded-circle img-fluid mb-3" style="width: 150px;">
+                    <label for="avatar" class="form-label">Change Profile Picture</label>
+                    <input class="form-control" type="file" id="avatar" name="avatar">
+                </div>
+                <div class="col-md-8">
+                </div>
                 <div class="col-md-6 mb-3">
                     <label for="first_name" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="first_name" name="first_name" value="<?= htmlspecialchars($user->first_name ?? '') ?>">
@@ -35,8 +42,10 @@
                 <textarea class="form-control" id="bio" name="bio" rows="5"><?= htmlspecialchars($profile->bio ?? '') ?></textarea>
             </div>
 
-            <button type="submit" class="btn btn-success">Save Changes</button>
-            <a href="profile.php" class="btn btn-secondary">Cancel</a>
+            <div class="mt-4">
+                <button type="submit" class="btn btn-success">Save Changes</button>
+                <a href="profile.php?user=<?= $user->username ?>" class="btn btn-secondary">Cancel</a>
+            </div>
         </form>
     </div>
 </div>

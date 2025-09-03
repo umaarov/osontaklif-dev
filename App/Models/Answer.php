@@ -12,21 +12,22 @@ class Answer extends Model
     public static function findByQuestionId(int $questionId)
     {
         $sql = "
-            SELECT a.*, u.first_name
+            SELECT 
+                a.*, 
+                u.first_name,
+                u.username,
+                up.surname,
+                up.avatar_url
             FROM answers a
             JOIN users u ON a.user_id = u.id
+            LEFT JOIN user_profiles up ON u.id = up.user_id
             WHERE a.question_id = :question_id
             ORDER BY a.created_at DESC
         ";
         $stmt = self::db()->prepare($sql);
         $stmt->execute([':question_id' => $questionId]);
 
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $models = [];
-        foreach ($results as $result) {
-            $models[] = new static($result);
-        }
-        return $models;
+        return self::processResults($stmt);
     }
 
     public static function findRecentByUserId(int $userId, int $limit = 5)
@@ -53,4 +54,13 @@ class Answer extends Model
         return $models;
     }
 
+    private static function processResults($stmt)
+    {
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $models = [];
+        foreach ($results as $result) {
+            $models[] = new static($result);
+        }
+        return $models;
+    }
 }
