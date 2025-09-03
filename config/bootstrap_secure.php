@@ -38,3 +38,28 @@ if ($isProduction) {
 header('X-Frame-Options: DENY');
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: same-origin');
+
+if (!isset($_SESSION['user_id']) && isset($_COOKIE['remember_me'])) {
+    list($selector, $validator) = explode(':', $_COOKIE['remember_me'], 2);
+
+    if ($selector && $validator) {
+        $sql = "SELECT * FROM auth_tokens WHERE selector = :selector AND expires_at >= NOW() LIMIT 1";
+        $stmt = Database::getInstance()->getConnection()->prepare($sql);
+        $stmt->execute([':selector' => $selector]);
+        $token = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($token) {
+            $hashedValidator = hash('sha256', $validator);
+
+            if (hash_equals($token['hashed_validator'], $hashedValidator)) {
+
+                $user = App\Models\User::find($token['user_id']);
+                if ($user) {
+                    $_SESSION['user_id'] = $user->id;
+                    $_SESSION['user_name'] = $user->first_name;
+
+                }
+            }
+        }
+    }
+}

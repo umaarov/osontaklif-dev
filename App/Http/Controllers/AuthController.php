@@ -16,22 +16,28 @@ class AuthController extends Controller
     {
         $email = $_POST['email'] ?? '';
         $password = $_POST['password'] ?? '';
+        $rememberMe = isset($_POST['remember_me']);
 
         $user = User::findByEmail($email);
 
         if (!$user || !$user->verifyPassword($password)) {
             $_SESSION['error'] = 'Invalid email or password.';
-            header('Location: /login.php');
+            header('Location: login.php');
             exit();
         }
 
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_name'] = $user->first_name;
-        $_SESSION['success'] = 'Successfully logged in!';
 
-        header('Location: /home.php');
+        if ($rememberMe) {
+            $this->createRememberMeToken($user->id);
+        }
+
+        $_SESSION['success'] = 'Successfully logged in!';
+        header('Location: home.php');
         exit();
     }
+
 
     public function showRegisterForm()
     {
@@ -75,9 +81,47 @@ class AuthController extends Controller
 
     public function logout()
     {
+        $this->clearRememberMeToken();
+
         session_unset();
         session_destroy();
-        header('Location: /home.php');
+
+        session_start();
+        $_SESSION['success'] = 'You have been logged out.';
+        header('Location: home.php');
         exit();
+    }
+
+    private function createRememberMeToken(int $userId): void
+    {
+        $selector = bin2hex(random_bytes(16));
+        $validator = bin2hex(random_bytes(32));
+        $hashedValidator = hash('sha256', $validator);
+        $expiresAt = date('Y-m-d H:i:s', time() + (86400 * 30));
+
+        $sql = "INSERT INTO auth_tokens (selector, hashed_validator, user_id, expires_at) VALUES (:selector, :hashed_validator, :user_id, :expires_at)";
+        $stmt = User::db()->prepare($sql);
+        $stmt->execute([
+            ':selector' => $selector,
+            ':hashed_validator' => $hashedValidator,
+            ':user_id' => $userId,
+            ':expires_at' => $expiresAt
+        ]);
+
+        $cookieValue = $selector . ':' . $validator;
+        setcookie('remember_me', $cookieValue, time() + (86400 * 30), "/", "", false, true);
+    }
+
+    private function clearRememberMeToken(): void
+    {
+        if (isset($_COOKIE['remember_me'])) {
+            list($selector, $validator) = explode(':', $_COOKIE['remember_me'], 2);
+
+            $sql = "DELETE FROM auth_tokens WHERE selector = :selector";
+            $stmt = User::db()->prepare($sql);
+            $stmt->execute([':selector' => $selector]);
+
+            setcookie('remember_me', '', time() - 3600, "/");
+        }
     }
 }
