@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<!--    <title>--><?php //= APP_NAME ?><!--</title>-->
+    <!--    <title>--><?php //= APP_NAME ?><!--</title>-->
     <title><?= htmlspecialchars($metaTitle) ?></title>
     <meta name="description" content="<?= htmlspecialchars($metaDescription) ?>">
-    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>" />
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/app.css">
@@ -26,10 +26,17 @@
                     <li class="nav-item"><a class="nav-link" href="mock.php">Mock</a></li>
                     <li class="nav-item"><a class="nav-link" href="requirements.php">Requirements</a></li>
                 </ul>
-                <div class="d-flex">
-                    <a href="https://www.buymeacoffee.com/umarov" target="_blank" class="btn btn-warning btn-sm">
-                        <i class="fa fa-coffee me-1"></i> Buy me a coffee
-                    </a>
+                <div class="d-flex align-items-center">
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                        <span class="navbar-text me-3">
+                            Welcome, <?= htmlspecialchars($_SESSION['user_name']) ?>!
+                        </span>
+                        <a href="/profile" class="btn btn-outline-light btn-sm me-2">Profile</a>
+                        <a href="/logout" class="btn btn-secondary btn-sm">Logout</a>
+                    <?php else: ?>
+                        <a href="/login" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="/register" class="btn btn-primary btn-sm">Sign Up</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -37,7 +44,23 @@
 </header>
 
 <div class="content-wrapper">
+
     <div class="container">
+        <?php if (isset($_SESSION['success'])): ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <?= $_SESSION['success'] ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <?php unset($_SESSION['success']); ?>
+        <?php endif; ?>
+        <?php if (isset($_SESSION['error'])): ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?= $_SESSION['error'] ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
+
         <?php echo $content; ?>
     </div>
 </div>

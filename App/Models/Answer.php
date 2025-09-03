@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Models;
+
+use Core\Model;
+use PDO;
+
+class Answer extends Model
+{
+    protected static $table = 'answers';
+
+    public static function findByQuestionId(int $questionId)
+    {
+        $sql = "
+            SELECT a.*, u.first_name
+            FROM answers a
+            JOIN users u ON a.user_id = u.id
+            WHERE a.question_id = :question_id
+            ORDER BY a.created_at DESC
+        ";
+        $stmt = self::db()->prepare($sql);
+        $stmt->execute([':question_id' => $questionId]);
+
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $models = [];
+        foreach ($results as $result) {
+            $models[] = new static($result);
+        }
+        return $models;
+    }
+
+}

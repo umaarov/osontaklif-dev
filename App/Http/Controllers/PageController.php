@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Answer;
 use App\Models\Interview;
 use App\Models\Profession;
 use App\Models\Question;
@@ -88,11 +89,20 @@ class PageController extends Controller
     public function question($id, $professionId = null)
     {
         $question = Question::find($id);
+        if (!$question) {
+            http_response_code(404);
+            $this->view('errors.404');
+            return;
+        }
+
         $profession = null;
         if ($professionId) {
             $profession = Profession::find($professionId);
         }
-        $this->view('pages.question', compact('question', 'profession'));
+
+        $answers = Answer::findByQuestionId($id);
+
+        $this->view('pages.question', compact('question', 'profession', 'answers'));
     }
 
     public function mock()
