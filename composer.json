@@ -4,6 +4,7 @@
         "ezyang/htmlpurifier": "^4.18",
       "ext-pdo": "*",
       "ext-memcached": "*",
-        "erusev/parsedown": "^1.7"
+        "erusev/parsedown": "^1.7",
+        "tecnickcom/tcpdf": "^6.10"
     }
 }
